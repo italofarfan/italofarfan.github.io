@@ -31,6 +31,7 @@
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
 
 
@@ -59,6 +60,11 @@ Italo Farfán            </a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
               <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
@@ -101,6 +107,14 @@ Italo Farfán            </a>
                 <p>Prueba 2</p>
             </div>
             <!-- /.entry-content -->
+    <hr />
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            <a class="addthis_button_tweet"></a>
+            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    </div>
+    <!-- AddThis Button END -->
     <hr/>
     <section class="comments" id="comments">
         <h2>Comments</h2>
@@ -145,6 +159,7 @@ Italo Farfán            </a>
                 <li class="list-group-item"><a href="http://twitter.com/italoFFVV"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
                 <li class="list-group-item"><a href="https://github.com/italofarfan"><i class="fa fa-github-square fa-lg"></i> github</a></li>
                 <li class="list-group-item"><a href="http://www.linkedin.com/in/italoffvv/"><i class="fa fa-linkedin-square fa-lg"></i> linkedIn</a></li>
+                <li class="list-group-item"><a href="http://italofarfan.com/feeds/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
               </ul>
             </li>
 
@@ -225,5 +240,7 @@ Italo Farfán            </a>
     </script>
     <!-- End Disqus Code -->
 
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e876000274cac71"></script>
 </body>
 </html>
