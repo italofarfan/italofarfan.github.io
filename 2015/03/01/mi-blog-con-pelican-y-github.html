@@ -13,16 +13,18 @@
 <link rel="canonical" href="/2015/03/01/mi-blog-con-pelican-y-github.html">
 
         <meta name="author" content="Italo Farfán Vera" />
-        <meta name="keywords" content="" />
+        <meta name="keywords" content="python,pelican" />
+        <meta name="description" content="Guía para crear tu blog o web con Github, Pelican y dominio propio." />
 
         <meta property="og:site_name" content="Italo Farfán" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Mi blog con Pelican y Github"/>
         <meta property="og:url" content="/2015/03/01/mi-blog-con-pelican-y-github.html"/>
-        <meta property="og:description" content=""/>
+        <meta property="og:description" content="Guía para crear tu blog o web con Github, Pelican y dominio propio."/>
         <meta property="article:published_time" content="2015-03-01" />
-            <meta property="article:section" content="" />
-            <meta property="article:tag" content="" />
+            <meta property="article:section" content="tutoriales" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content="pelican" />
             <meta property="article:author" content="Italo Farfán Vera" />
 
 
@@ -55,8 +57,11 @@ Italo Farfán            </a>
                          <li><a href="/pages/about-me.html">
                              About me
                           </a></li>
+                        <li >
+                            <a href="/category/articulos.html">Artículos</a>
+                        </li>
                         <li class="active">
-                            <a href="/category/.html"></a>
+                            <a href="/category/tutoriales.html">Tutoriales</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -100,11 +105,279 @@ Italo Farfán            </a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="/tag/.html"></a>
+	<a href="/tag/python.html">python</a>
+        /
+	<a href="/tag/pelican.html">pelican</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Prueba 2</p>
+                <p>Cansado de lidiar con el editor de wordpress (y antes con el de blogger) decidí buscar herramientas que me ofrecieran construir un blog más limpio, integrar código y los notebooks de python más fácilmente y sobre todo alojamiento gratuito. A continuación dejaré unos tips que me ayudaron a configurar mi blog con dominio propio y te servirán si no eres informático.</p>
+<h2>Ingredientes:</h2>
+<ul>
+<li>Pelican: un generador de sitios estáticos construido con Python. Hay muchos más, me quede con Pelican por la comunidad activa (lo que significa: más documentación, plugins, plantillas)</li>
+<li>GitHub Pages: que permite alojar webs para ti y tus proyectos alojadas en tu repositorio Github</li>
+<li>Dominio propio: no es obligatorio. Si no lo tienes la url de tu blog será usuario.github.io</li>
+</ul>
+<h2>Configuración de GitHub Pages</h2>
+<p>Crea un repositorio en github con el nombre: usuario.github.io </p>
+<p>Si sigues las instrucciones de <a href="http://pages.github.com/">Github Pages</a>. Sólo crea el repositorio (primer paso), nada más. Allí es donde se alojará el contenido de tu blog/web.</p>
+<h2>Instalación y configuración de Pelican</h2>
+<p>Tienes que instalar Pelican y Markdown. Este último es opcional. Markdown es una herramienta de texto a HTML, Pelican usa reStructuredText (rST) que también es fácil de manejar. <a href="http://docs.getpelican.com/en/3.1.1/getting_started.html#installing-pelican">Más info sobre paquetes</a>.</p>
+<div class="highlight"><pre><span class="nv">$ </span>pip install pelican markdown
+</pre></div>
+
+
+<p>Crea una carpeta por ejemplo, blog. Esta contendrá todo lo necesario para crear tu blog/web, dentro de ella ejecutaremos Pelican quickstart (Pelican por medio de un dialogo te ayuda con la configuración).</p>
+<div class="highlight"><pre><span class="nv">$ </span>mkdir blog
+<span class="nv">$ </span><span class="nb">cd </span>blog
+<span class="nv">$ </span>pelican-quickstart
+</pre></div>
+
+
+<p>Te saldrá el siguiente dialogo (en mayusculas las respuestas):</p>
+<div class="highlight"><pre>Where <span class="k">do </span>you want to create your new web site? <span class="o">[</span>.<span class="o">]</span>
+What will be the title of this web site?
+&gt; Italo Farfán
+Who will be the author of this web site?
+&gt; Italo Farfán Vera
+What will be the default language of this web site? <span class="o">[</span>es<span class="o">]</span>
+Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; y
+What is your URL prefix? <span class="o">(</span>see above example; no trailing slash<span class="o">)</span>
+&gt; http://italofarfan.github.io
+Do you want to <span class="nb">enable </span>article pagination? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; y
+How many articles per page <span class="k">do </span>you want? <span class="o">[</span>10<span class="o">]</span>
+Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; y
+Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; y
+Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; n
+Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; n
+Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; n
+Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; n
+Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; n
+&gt; 
+</pre></div>
+
+
+<p>Pelican creará la siguiente estructura de directorios:</p>
+<div class="highlight"><pre><span class="nv">$ </span>tree
+
+├── Makefile
+├── content
+├── develop_server.sh
+├── fabfile.py
+├── output
+├── pelicanconf.py
+└── publishconf.py
+</pre></div>
+
+
+<p>Pelican asume que los artículos que escribirás los guardarás en la carpeta <code>content</code>. Adicionalmente deberías crear dos nuevas carpetas.</p>
+<div class="highlight"><pre><span class="nv">$ </span>mkdir content/pages
+<span class="nv">$ </span>mkdir content/images
+</pre></div>
+
+
+<p>En pages podrás crear los archivos <code>about me</code>, <code>contact</code>, etc. Pelican los reconocerá sin problemas.</p>
+<p>Pelican convertirá tus artículos guardados en <code>content</code> en html y las guardará en la carpeta <code>output</code>. Más adelante comentaré como hacer para que tengan el siguiente estilo: midominio.com/2015/01/31/nombre-de-mi posts.html</p>
+<p>Es en output donde se generará tu sitio web y es donde tendrás que colocar el archivo CNAME si deseas utilizar un dominio propio (tudominio.com).</p>
+<h2>Subiendo nuestros cambios a la nube</h2>
+<p>Tenemos que inicializar un repositorio github desde nuestra carpeta output y conectarlo con nuestro repositorio remoto creado anteriormente (usuario.github.io).</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>git init
+<span class="nv">$ </span>git remote add origin https://github.com/username/username.github.io.git
+<span class="nv">$ </span>git add --all
+<span class="nv">$ </span>git commit -m <span class="s2">&quot;commit message&quot;</span>
+<span class="nv">$ </span>git push origin master
+</pre></div>
+
+
+<p>Ya estas listo para publicar pero <strong><em>*no todas las plantillas ofrecen soporte a todos los plugins</em></strong>*. Por ejemplo Disqus, que permite integrar comentarios en tu blog, no funciona con la plantilla por defecto. La plantilla que usa Amy y la mia funcionan. <a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Amy Hanlon tiene una guía en inglés muy completa</a>.</p>
+<h2>Plugins y plantillas</h2>
+<p>Yo estoy utilizando la plantilla pelican-bootstrap3 y el plugin Tipue Search para agregar el cuadro de búsqueda en la parte superior derecha. La plantilla es responsive.</p>
+<p>Lo más rápido es clonar el repositorio plugins </p>
+<div class="highlight"><pre><span class="nv">$ </span>git clone https://github.com/getpelican/pelican-themes
+</pre></div>
+
+
+<p>Y plantillas al directorio que creaste, en mi caso el directorio "blog".</p>
+<div class="highlight"><pre><span class="nv">$ </span>git clone https://github.com/getpelican/pelican-plugins
+</pre></div>
+
+
+<p>Luego tienes que abrir el archivo pelicanconf.py para indicar donde se encuentran los plugins e indicar el plugin que usarás. Agregar lo siguiente:</p>
+<div class="highlight"><pre><span class="c"># Plugins</span>
+<span class="n">PLUGIN_PATH</span> <span class="o">=</span> <span class="s">&#39;pelican-plugins&#39;</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;tipue_search&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>En el mismo archivo, pelicanconf.py agrega la siguiente linea para indicar la plantilla que usarás.</p>
+<div class="highlight"><pre><span class="n">THEME</span> <span class="o">=</span> <span class="s">&quot;pelican-themes/pelican-bootstrap3&quot;</span>
+</pre></div>
+
+
+<p>Si aún te quedan dudas echa un vistazo <a href="https://github.com/DandyDev/dandydev.net">al archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3</a></p>
+<p>Más información:
+<em> <a href="https://github.com/DandyDev/pelican-bootstrap3">Documentación de la plantilla Bootstrap3</a>
+</em>  <a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Migrating to GitHub Pages using Pelican por Amy Hanlon</a></p>
+<h2>Agregando Disqus, Google Analytics y Addthis (botones para compartir)</h2>
+<p>Se supone que ya tienes una cuenta en estos servicios gratuitos.</p>
+<ul>
+<li>Disqus, necesitas de un "short_name" para ello registra tu web: https://disqus.com/admin/create/ Indica el nombre de tu sitio (SITE NAME) y una DISQUS_URL. Este último será tu shortname. Finalmente obtendrás algo como esto: http://short_name.disqus.com/admin/settings</li>
+<li>AddThis, necesitas Profile ID, lo puedes crear desde settings: https://www.addthis.com/settings/publisher</li>
+<li>Google Analytics, necesitas de un "identificador". Si no lo tienes, entra a Google Analytics y crea una nueva propiedad. Desde Admin/Property obtendrás un identificador de la forma: UA-XXXX-YYYY</li>
+</ul>
+<p>Ahora agrega las siguientes líneas en <code>pelicanconf.py</code> y <code>publishconf.py</code></p>
+<div class="highlight"><pre><span class="n">DISQUS_SITENAME</span> <span class="o">=</span> <span class="s">&quot;tu_short_name&quot;</span>
+<span class="n">GOOGLE_ANALYTICS</span> <span class="o">=</span> <span class="s">&quot;UA-XXXXXX-1&quot;</span>
+<span class="n">ADDTHIS_PROFILE</span> <span class="o">=</span> <span class="s">&#39;ra-XXXXXXXXXXXXXXXX&#39;</span>
+</pre></div>
+
+
+<p>Más información en:</p>
+<ul>
+<li><a href="http://querbalken.net/howto-setup-comments-with-disqus-in-pelican-en.html">Howto Setup Comments with Disqus in Pelican</a></li>
+</ul>
+<h2>Configurando dominio propio</h2>
+<ul>
+<li>Crea un archivo <code>CNAME</code> y dentro escribe tu dominio, por ejemplo: tudominio.com</li>
+<li>Guarda el archivo <code>CNAME</code> en la carpeta output</li>
+<li>Entra al panel de control de tu proveedor de dominio y crea un registro CNAME que apunte a tu_usuario.github.io o un registro A añadiendo los siguientes IP <code>192.30.252.153</code> y <code>192.30.252.154</code>. En mi caso Strato solo me dejo agregar un IP e igual funciona.</li>
+</ul>
+<p>Más info:
+<em> <a href="https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/">Ayuda de Github para crear un registro CNAME</a>
+</em> <a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/">Ayuda de Github para crear un registro A</a></p>
+<h2>Escribiendo artículos en reStructuredText(rST) y Markdown(md)</h2>
+<p>Creamos un archivo con la extensión .rst o .md y lo guardamos en la carpeta content.</p>
+<h4>Ejemplo en reStructuredTex</h4>
+<div class="highlight"><pre><span class="n">Mi</span> <span class="n">primer</span> <span class="n">post</span>
+<span class="cp">##############</span>
+
+<span class="o">:</span><span class="n">date</span><span class="o">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mo">01</span> <span class="mi">15</span><span class="o">:</span><span class="mi">43</span>
+<span class="o">:</span><span class="n">tags</span><span class="o">:</span> <span class="n">test</span><span class="p">,</span> <span class="n">prueba</span>
+<span class="o">:</span><span class="n">category</span><span class="o">:</span> <span class="n">python</span>
+<span class="o">:</span><span class="n">slug</span><span class="o">:</span> <span class="n">mi</span><span class="o">-</span><span class="n">primer</span><span class="o">-</span><span class="n">post</span>
+<span class="o">:</span><span class="n">author</span><span class="o">:</span> <span class="n">TuNombre</span>
+<span class="o">:</span><span class="n">summary</span><span class="o">:</span> <span class="n">Versi</span><span class="err">ó</span><span class="n">n</span> <span class="n">corta</span> <span class="n">para</span> <span class="n">el</span> <span class="err">í</span><span class="n">ndice</span> <span class="n">y</span> <span class="n">feeds</span>
+</pre></div>
+
+
+<h4>Ejemplo en Markdown</h4>
+<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span> <span class="n">My</span> <span class="kd">super</span> <span class="n">title</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">thats</span><span class="o">,</span> <span class="n">awesome</span>
+<span class="n">Category</span><span class="o">:</span> <span class="n">yeah</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">my</span><span class="o">-</span><span class="kd">super</span><span class="o">-</span><span class="n">post</span>
+<span class="n">Author</span><span class="o">:</span> <span class="n">Alexis</span> <span class="n">Metaireau</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">Short</span> <span class="n">version</span> <span class="k">for</span> <span class="n">index</span> <span class="n">and</span> <span class="n">feeds</span>
+
+<span class="n">This</span> <span class="k">is</span> <span class="n">the</span> <span class="n">content</span> <span class="n">of</span> <span class="n">my</span> <span class="kd">super</span> <span class="n">blog</span> <span class="n">post</span><span class="o">.</span>
+</pre></div>
+
+
+<h2>Automatizar creación de archivos</h2>
+<p>Para poder crear más rápido los post podemos hacer uso de un script:</p>
+<ul>
+<li>Para rST: <code>make_entry.py</code>, de Nafiul Islam <a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation">Descargalo aquí</a>.</li>
+<li>Para md: <code>make_entrymd.py</code>, modifiqué el archivo para que funcione con md. <a href="https://github.com/italofarfan">Descargalo aquí</a></li>
+</ul>
+<p>Para ejecutarlo nos ubicamos en el directorio principal:</p>
+<div class="highlight"><pre> <span class="nv">$ </span>python make_entrymd.py <span class="s2">&quot;Nueva Entrada&quot;</span>
+</pre></div>
+
+
+<p>El resultado será:</p>
+<div class="highlight"><pre>File created -&gt; content/2015_02_31_nueva-entrada.md
+</pre></div>
+
+
+<p>Se creará un archivo similar a este</p>
+<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span> <span class="n">Nueva</span> <span class="n">Entrada</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">15</span><span class="o">-</span><span class="mi">03</span> <span class="mi">12</span><span class="o">:</span><span class="mi">20</span>
+<span class="n">Tags</span><span class="o">:</span> 
+<span class="n">Category</span><span class="o">:</span> 
+<span class="n">Slug</span><span class="o">:</span> <span class="n">nueva</span><span class="o">-</span><span class="n">entrada</span>
+<span class="n">Author</span><span class="o">:</span> 
+<span class="n">Summary</span><span class="o">:</span> 
+<span class="n">status</span><span class="o">:</span> <span class="n">draft</span> 
+</pre></div>
+
+
+<p>El status <code>draft</code> te permite crear artículos en estado borrador. Muy útil si aún no deseas publicar o quieres que otra persona ĺo revise. Pelican no mostrará tu artículo hasta que  borres la línea <code>status: draft</code>. Hasta entonces lo guardará en la carpeta <code>drafts</code>.</p>
+<h2>Posts con la forma: /año/mes/dia/nombre-de-post.html</h2>
+<p>Agregamos al archivo <code>pelicanconf.py</code> lo siguiente:</p>
+<div class="highlight"><pre><span class="c"># Formating URLs</span>
+<span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s">&#39;{date:%Y}/{date:%m}/{date:</span><span class="si">%d</span><span class="s">}/{slug}.html&#39;</span>
+<span class="n">ARTICLE_SAVE_AS</span> <span class="o">=</span> <span class="s">&#39;{date:%Y}/{date:%m}/{date:</span><span class="si">%d</span><span class="s">}/{slug}.html&#39;</span>
+</pre></div>
+
+
+<h2>Generando nuestra web</h2>
+<p>Ahora ya tienes todo para escribir tus artículos y generar tu web. ¡Adelante!</p>
+<h4>Crea un post (si usas el script <code>make_entry/md.py</code>)</h4>
+<div class="highlight"><pre> <span class="nv">$ </span>python make_entrymd.py <span class="s2">&quot;Nombre de tu nuevo post&quot;</span>
+</pre></div>
+
+
+<h4>Escribe un artículo</h4>
+<p>Entra a la carpeta <code>content</code>, abre el archivo que acabas de crear y escribe un artículo. Yo estoy usando <a href="http://pad.haroopress.com/user.html">Haroopress</a> un procesador para Markdown que te permite ver los cambios en tiempo real mientras escribes. También puedes usar Vim, Emacs o SublimeText.</p>
+<h4>Genera tu web</h4>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>blog
+<span class="nv">$ </span>make devserver
+</pre></div>
+
+
+<p>Puedes ver los cambios en tu blog entrando en:
+http://localhost:8000 y sales con</p>
+<div class="highlight"><pre><span class="nv">$ </span>make stopserver
+</pre></div>
+
+
+<h4>Empuja los cambios a tu repositorio</h4>
+<p>Recuerda hacerlo desde la carpeta output</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>git add --all
+<span class="nv">$ </span>git commit -m <span class="s2">&quot;commit message&quot;</span>
+<span class="nv">$ </span>git push origin master
+</pre></div>
+
+
+<p>Visita tu web.</p>
+<h1>FIN</h1>
+<h2>Comandos extras en caso de accidentes</h2>
+<h4>Inicializar repositorio</h4>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>git init
+<span class="nv">$ </span>git remote add origin https://github.com/username/username.github.io.git
+</pre></div>
+
+
+<h4>Restaurar repositorio</h4>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>blog
+<span class="nv">$ </span>git clone https://github.com/username/username.github.io.git output
+<span class="nv">$ </span>pelican content
+<span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>git add --all
+<span class="nv">$ </span>git commit -m <span class="s2">&quot;commit message&quot;</span>
+<span class="nv">$ </span>git push origin master
+</pre></div>
+
+
+<h2>Referencias</h2>
+<ul>
+<li><a href="https://github.com/DandyDev/dandydev.net">Observa el archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Cheat Sheet para Markdown</a></li>
+<li><a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Amy Hanlon, Migrating to Github Pages using Pelican</a>.</li>
+<li><a href="https://github.com/DandyDev/pelican-bootstrap3">Pelican Boostrap3 Theme</a></li>
+</ul>
             </div>
             <!-- /.entry-content -->
     <hr />
@@ -159,7 +432,7 @@ Italo Farfán            </a>
                 <li class="list-group-item"><a href="http://twitter.com/italoFFVV"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
                 <li class="list-group-item"><a href="https://github.com/italofarfan"><i class="fa fa-github-square fa-lg"></i> github</a></li>
                 <li class="list-group-item"><a href="http://www.linkedin.com/in/italoffvv/"><i class="fa fa-linkedin-square fa-lg"></i> linkedIn</a></li>
-                <li class="list-group-item"><a href="http://italofarfan.com/feeds/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
+                <li class="list-group-item"><a href="http://italofarfan.com/feeds/all.atom.xml"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
               </ul>
             </li>
 
@@ -167,9 +440,24 @@ Italo Farfán            </a>
 
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
-                    <li class="list-group-item tag-1">
-                        <a href="/tag/.html">
-                            
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/pelican.html">
+                            pelican
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/inteligencia-artificial.html">
+                            inteligencia artificial
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/big-data.html">
+                            big data
                         </a>
                     </li>
                 </ul>
@@ -241,6 +529,6 @@ Italo Farfán            </a>
     <!-- End Disqus Code -->
 
         <script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e876000274cac71"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54f5b02c1a06d710"></script>
 </body>
 </html>
