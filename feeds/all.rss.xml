@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Italo Farfán</title><link>http://italofarfan.com/</link><description></description><atom:link href="http://italofarfan.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 03 Mar 2015 10:42:00 +0100</lastBuildDate><item><title>Inteligencia Artificial y Big Data</title><link>http://italofarfan.com/posts/2015/03/03/inteligencia-artificial-y-big-data.html</link><description>&lt;p&gt;La Inteligencia Artificial es un campo perteneciente a las Ciencias de la Computación cuyo objetivo es la creación de  software y/o hardware inteligente. Entendamos que cualquier sistema basado en hardware y software que pueda realizar exitosamente una tarea no trivial se dice que posee un grado de inteligencia artificial &lt;a class="footnote-reference" href="#id4" id="id1"&gt;[1]&lt;/a&gt;. Una actividad no trivial podría ser: la toma de decisiones financieras, pilotar un helicóptero, desarrollar nuevos productos, realizar un plan de mantenimiento predictivo de máquinas, etc.&lt;/p&gt;
+&lt;p&gt;Algunas áreas de la Inteligencia Artificial son: teoría de juegos, procesamiento de lenguaje natural, visión por computador, sistemas expertos, búsqueda, reconocimiento de patrones y más.&lt;/p&gt;
+&lt;p&gt;Cuando en Inteligencia Artificial hablamos de algoritmos genéticos, hablamos de algoritmos de búsqueda inspirados en la teoría de evolución. Un algoritmo es un proceso o conjunto de reglas que permite resolver de manera eficaz un problema. Mejores algoritmos serán eficientes, peores algoritmos sólo serán eficaces.&lt;/p&gt;
+&lt;p&gt;La Inteligencia Artificial va de la mano del desarrollo tecnológico. Si bien es cierto, la Inteligencia Artificial emergió con fuerza en los 40s con la aparición de las  primeras computadoras electrónicas. A medida que la tecnología nos ha ido proporcionando mayor capacidad de procesamiento y almacenamiento, la Inteligencia Artificial ha ido cobrando mayor protagonismo en la solución de problemas complejos. En la actualidad hablamos de sistemas inteligentes capaces de realizar transacciones de compra y venta de acciones en tiempo real, asistentes virtuales de atención al consumidor, aplicaciones orientadas a la fidelización de clientes, etc.&lt;/p&gt;
+&lt;p&gt;Incluso es muy probable que se haya aplicado la teoría de juegos en las negociaciones entre la Unión Europea y Grecia. La teoría de juegos busca predecir cuál será el resultado más probable en una negociación, ya sea entre personas, empresas o países, donde pueden estar en juego millones de euros. Debemos recordar que todo esto es posible gracias a que somos capaces de convertir en conocimiento la información que extraemos de los datos o del Big Data.&lt;/p&gt;
+&lt;p&gt;Cuando hablamos de Big Data nos referimos a una gran cantidad de datos que sobrepasan las capacidades de procesamiento de las herramientas tradicionales. Podríamos hablar de muchos datos cuando sobrepasan los terabytes pero esto es relativo (recordemos que lo que es Big Data hoy no lo era hace cinco años).  Para saber si nos enfrentamos a una problema de big data tenemos que tener en cuenta el volumen (el tamaño de los datos), la velocidad (de llegada y procesamiento) y la variedad (datos de  registros web, audio, social media, sensores, etc) &lt;a class="footnote-reference" href="#id5" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En una organización los datos pueden venir de fuentes internas (por ejemplo: información de diferentes departamentos que incluyen costes, historial de clientes, stock, etc )  y de fuentes externas de información (por ejemplo: lo que dicen mis clientes en una red social). Esto para el sector retail y finanzas puede ser muy útil de cara al desarrollo de nuevos productos e identificación de tendencias.&lt;/p&gt;
+&lt;p&gt;El sector minero también tiene la necesidad de analizar grandes volúmenes de datos, provenientes de tareas como la prospección, almacenado de información geológica y producción &lt;a class="footnote-reference" href="#id6" id="id3"&gt;[3]&lt;/a&gt;. Tratar los datos como un activo les permite: reducir los costes de mantenimiento y los tiempos no productivos de las máquinas, lo cual repercute positivamente en sus beneficios (hablamos de millones de dólares).&lt;/p&gt;
+&lt;p&gt;Para realizar el procesamiento de grandes datos podemos hacer uso de procesamiento paralelo, donde muchas máquinas trabajan simultáneamente para resolver un problema, o de computación distribuida, donde distintos dispositivos independientes y conectados en red  colaboran para alcanzar una solución. MapReduce es una tecnología que da soporte a la computación paralela y Hadoop es otra tecnología disruptiva que da soporte a la computación distribuida. Además también es posible hacer uso de inteligencia artificial desde la nube.&lt;/p&gt;
+&lt;p&gt;La computación en la nube, el Big Data y la Inteligencia Artificial, juntas, nos permiten construir una ventana para mirar hacia atrás y adelante. Analizar los datos para simular que pasará o ver los posibles resultados al tomar una decisión es como mirar hacia el futuro, es lo que permite generar ventajas competitivas aunque también implica que las empresas se comprometan y adopten una cultura basada en los datos.&lt;/p&gt;
+&lt;div class="section" id="referencias"&gt;
+&lt;h2&gt;Referencias&lt;/h2&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Frampton, M. (2014). Big Data Made Easy: A Working Guide to the Complete Hadoop Toolset. Apress. &lt;a class="reference external" href="http://proquest.safaribooksonline.com/book/databases/hadoop/9781484200940"&gt;Link de [1]:&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neapolitan, R. E., &amp;amp; Jiang, X. (2012). Contemporary artificial intelligence. CRC Press. &lt;a class="reference external" href="http://proquest.safaribooksonline.com/book/programming/9781466573192"&gt;Link de [2]:&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Matías Gil (2012). La industria minera en búsqueda de la eficiencia con Big Data. América Economía. &lt;a class="reference external" href="http://www.americaeconomia.com/analisis-opinion/la-industria-minera-en-busqueda-de-la-eficiencia-con-big-data"&gt;Link de [3]:&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Italo Farfán Vera</dc:creator><pubDate>Tue, 03 Mar 2015 10:42:00 +0100</pubDate><guid>tag:italofarfan.com,2015-03-03:posts/2015/03/03/inteligencia-artificial-y-big-data.html</guid><category>inteligencia artificial</category><category>big data</category></item><item><title>Mi blog con Pelican y Github</title><link>http://italofarfan.com/posts/2015/03/01/mi-blog-con-pelican-y-github.html</link><description>&lt;p&gt;Cansado de lidiar con el editor de wordpress (y antes con el de blogger) decidí buscar herramientas que me ofrecieran construir un blog más limpio, integrar código y los notebooks de python más fácilmente y sobre todo alojamiento gratuito. A continuación dejaré unos tips que me ayudaron a configurar mi blog con dominio propio y te servirán si no eres informático.&lt;/p&gt;
+&lt;h2&gt;Ingredientes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pelican: un generador de sitios estáticos construido con Python. Hay muchos más, me quede con Pelican por la comunidad activa (lo que significa: más documentación, plugins, plantillas).&lt;/li&gt;
+&lt;li&gt;GitHub Pages: que permite alojar webs para ti y tus proyectos alojadas en tu repositorio Github.&lt;/li&gt;
+&lt;li&gt;Dominio propio: no es obligatorio. Si no lo tienes la url de tu blog será usuario.github.io&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Configuración de GitHub Pages&lt;/h2&gt;
+&lt;p&gt;Crea un repositorio en github con el nombre: usuario.github.io &lt;/p&gt;
+&lt;p&gt;Si sigues las instrucciones de &lt;a href="http://pages.github.com/"&gt;Github Pages&lt;/a&gt; solo crea el repositorio (primer paso), nada más. Allí es donde se alojará el contenido de tu blog/web.&lt;/p&gt;
+&lt;h2&gt;Instalación y configuración de Pelican&lt;/h2&gt;
+&lt;p&gt;Tienes que instalar Pelican y Markdown, este último es opcional. Markdown es un lenguaje sencillo para generar contenido HTML sin necesidad de saber HTML. Pelican usa reStructuredText (rST) que también es fácil de manejar. &lt;a href="http://docs.getpelican.com/en/3.1.1/getting_started.html#installing-pelican"&gt;Más info sobre paquetes&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Crea una carpeta por ejemplo, &lt;code&gt;blog&lt;/code&gt;. Esta contendrá todo lo necesario para crear tu blog/web, dentro de ella ejecutaremos &lt;code&gt;pelican quickstart&lt;/code&gt;. Pelican por medio de un diálogo te ayuda con la configuración.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Abajo puedes ver como respondi:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Where &lt;span class="k"&gt;do &lt;/span&gt;you want to create your new web site? &lt;span class="o"&gt;[&lt;/span&gt;.&lt;span class="o"&gt;]&lt;/span&gt;
+What will be the title of this web site?
+&amp;gt; Italo Farfán
+Who will be the author of this web site?
+&amp;gt; Italo Farfán Vera
+What will be the default language of this web site? &lt;span class="o"&gt;[&lt;/span&gt;es&lt;span class="o"&gt;]&lt;/span&gt;
+Do you want to specify a URL prefix? e.g., http://example.com   &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; y
+What is your URL prefix? &lt;span class="o"&gt;(&lt;/span&gt;see above example; no trailing slash&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; http://italofarfan.github.io
+Do you want to &lt;span class="nb"&gt;enable &lt;/span&gt;article pagination? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; y
+How many articles per page &lt;span class="k"&gt;do &lt;/span&gt;you want? &lt;span class="o"&gt;[&lt;/span&gt;10&lt;span class="o"&gt;]&lt;/span&gt;
+Do you want to generate a Fabfile/Makefile to automate generation and publishing? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; y
+Do you want an auto-reload &amp;amp; simpleHTTP script to assist with theme and site development? &lt;span class="o"&gt;(&lt;/span&gt;Y/n&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; y
+Do you want to upload your website using FTP? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; n
+Do you want to upload your website using SSH? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; n
+Do you want to upload your website using Dropbox? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; n
+Do you want to upload your website using S3? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; n
+Do you want to upload your website using Rackspace Cloud Files? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt;
+&amp;gt; n
+&amp;gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Pelican creará la siguiente estructura de directorios:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;tree
+
+├── Makefile
+├── content
+├── develop_server.sh
+├── fabfile.py
+├── output
+├── pelicanconf.py
+└── publishconf.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Pelican asume que los artículos que escribirás los guardarás en la carpeta &lt;code&gt;content&lt;/code&gt;. Adicionalmente deberías crear dos nuevas carpetas.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir content/pages
+&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir content/images
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;En pages podrás crear los archivos &lt;code&gt;about me&lt;/code&gt;, &lt;code&gt;contact&lt;/code&gt;, etc. Pelican los reconocerá sin problemas.&lt;/p&gt;
+&lt;p&gt;Pelican convertirá tus artículos guardados en &lt;code&gt;content&lt;/code&gt; en html y los guardará en la carpeta &lt;code&gt;output&lt;/code&gt;. Más adelante comentaré cómo hacer para que tengan el siguiente estilo: midominio.com/2015/01/31/nombre-de-mi posts.html&lt;/p&gt;
+&lt;p&gt;Es en &lt;code&gt;output&lt;/code&gt; donde se generará tu sitio web y es donde tendrás que colocar el archivo CNAME si deseas utilizar un dominio propio (tudominio.com).&lt;/p&gt;
+&lt;h2&gt;Subiendo nuestros cambios a la nube&lt;/h2&gt;
+&lt;p&gt;Tenemos que inicializar un repositorio github desde nuestra carpeta output y conectarlo con nuestro repositorio remoto creado anteriormente (usuario.github.io).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
+&lt;span class="nv"&gt;$ &lt;/span&gt;git init
+&lt;span class="nv"&gt;$ &lt;/span&gt;git remote add origin https://github.com/username/username.github.io.git
+&lt;span class="nv"&gt;$ &lt;/span&gt;git add --all
+&lt;span class="nv"&gt;$ &lt;/span&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;commit message&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ya estás listo para publicar pero &lt;strong&gt;&lt;em&gt;*no todas las plantillas ofrecen soporte a todos los plugins&lt;/em&gt;&lt;/strong&gt;*. Por ejemplo Disqus, que permite integrar comentarios en tu blog, no funciona con la plantilla por defecto. La plantilla que usa Amy y la mía funcionan. &lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Amy Hanlon tiene una guía en inglés muy completa&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Plugins y plantillas&lt;/h2&gt;
+&lt;p&gt;Yo estoy utilizando la plantilla pelican-bootstrap3 y el plugin Tipue Search para agregar el cuadro de búsqueda en la parte superior derecha. La plantilla es responsive.&lt;/p&gt;
+&lt;p&gt;Para usarlas lo más rápido es clonar el repositorio plugins.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/getpelican/pelican-themes
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Y el repositorio plantillas al directorio que creaste, en mi caso el directorio "blog".&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/getpelican/pelican-plugins
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Luego tienes que abrir el archivo &lt;code&gt;pelicanconf.py&lt;/code&gt; e indicar la ruta donde se encuentran los plugins y el plugin que usarás. Agregar lo siguiente:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Plugins&lt;/span&gt;
+&lt;span class="n"&gt;PLUGIN_PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;pelican-plugins&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;PLUGINS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;tipue_search&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Indica la plantilla que usarás, en mi caso al usar la plantilla pelican-bootstrap3  la variable &lt;code&gt;THEME&lt;/code&gt; queda de la siguiente forma: pelican-themes/nombre-de-plantilla.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;pelican-themes/pelican-bootstrap3&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Si aún te quedan dudas echa un vistazo &lt;a href="https://github.com/DandyDev/dandydev.net"&gt;al archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Más información:
+&lt;em&gt; &lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Documentación de la plantilla Bootstrap3&lt;/a&gt;
+&lt;/em&gt;  &lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican por Amy Hanlon&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Agregando Disqus, Google Analytics y Addthis (botones para compartir)&lt;/h2&gt;
+&lt;p&gt;Se supone que ya tienes una cuenta en estos servicios gratuitos.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disqus: necesitas de un &lt;code&gt;short_name&lt;/code&gt;, para ello registra tu web: https://disqus.com/admin/create/ Indica el nombre de tu sitio (SITE NAME) y una DISQUS_URL. Este último será tu shortname. Finalmente obtendrás algo como esto: http://short_name.disqus.com/admin/settings&lt;/li&gt;
+&lt;li&gt;AddThis: necesitas Profile ID, lo puedes crear desde settings: https://www.addthis.com/settings/publisher&lt;/li&gt;
+&lt;li&gt;Google Analytics: necesitas de un "identificador", si no lo tienes, entra a Google Analytics y crea una nueva propiedad. Desde Admin/Property obtendrás un identificador de la forma: UA-XXXX-YYYY&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ahora agrega las siguientes líneas en &lt;code&gt;pelicanconf.py&lt;/code&gt; y &lt;code&gt;publishconf.py&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;DISQUS_SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;tu_short_name&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;GOOGLE_ANALYTICS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;UA-XXXXXX-1&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;ADDTHIS_PROFILE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;ra-XXXXXXXXXXXXXXXX&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Más información en:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://querbalken.net/howto-setup-comments-with-disqus-in-pelican-en.html"&gt;Howto Setup Comments with Disqus in Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Configurando dominio propio&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Crea un archivo &lt;code&gt;CNAME&lt;/code&gt; y dentro escribe tu dominio, por ejemplo: tudominio.com&lt;/li&gt;
+&lt;li&gt;Guarda el archivo &lt;code&gt;CNAME&lt;/code&gt; en la carpeta output&lt;/li&gt;
+&lt;li&gt;Entra al panel de control de tu proveedor de dominio y crea un registro CNAME que apunte a tu_usuario.github.io o un registro A añadiendo los siguientes IP &lt;code&gt;192.30.252.153&lt;/code&gt; y &lt;code&gt;192.30.252.154&lt;/code&gt;. En mi caso Strato solo me déjo agregar un IP e igual funciona.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Más info:
+&lt;em&gt; &lt;a href="https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro CNAME&lt;/a&gt;
+&lt;/em&gt; &lt;a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro A&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Escribiendo artículos en reStructuredText(rST) y Markdown(md)&lt;/h2&gt;
+&lt;p&gt;Creamos un archivo con la extensión .rst o .md y lo guardamos en la carpeta content.&lt;/p&gt;
+&lt;h4&gt;Ejemplo en reStructuredTex&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Mi&lt;/span&gt; &lt;span class="n"&gt;primer&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;
+&lt;span class="cp"&gt;##############&lt;/span&gt;
+
+&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;03&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;01&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;43&lt;/span&gt;
+&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;prueba&lt;/span&gt;
+&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;slug&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;mi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;primer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;
+&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;TuNombre&lt;/span&gt;
+&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;summary&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Versi&lt;/span&gt;&lt;span class="err"&gt;ó&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;corta&lt;/span&gt; &lt;span class="n"&gt;para&lt;/span&gt; &lt;span class="n"&gt;el&lt;/span&gt; &lt;span class="err"&gt;í&lt;/span&gt;&lt;span class="n"&gt;ndice&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;feeds&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Ejemplo en Markdown&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;My&lt;/span&gt; &lt;span class="kd"&gt;super&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2010&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;03&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="n"&gt;Tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;thats&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;awesome&lt;/span&gt;
+&lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;yeah&lt;/span&gt;
+&lt;span class="n"&gt;Slug&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kd"&gt;super&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;
+&lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Alexis&lt;/span&gt; &lt;span class="n"&gt;Metaireau&lt;/span&gt;
+&lt;span class="n"&gt;Summary&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Short&lt;/span&gt; &lt;span class="n"&gt;version&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;feeds&lt;/span&gt;
+
+&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="kd"&gt;super&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Automatizar creación de archivos&lt;/h2&gt;
+&lt;p&gt;Para poder crear más rápido los posts podemos hacer uso de un script:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Para rST: &lt;code&gt;make_entry.py&lt;/code&gt;, de Nafiul Islam &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Para md: &lt;code&gt;make_entrymd.py&lt;/code&gt;, modifiqué el archivo para que funcione con md. &lt;a href="https://github.com/italofarfan"&gt;Descárgalo aquí&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para ejecutarlo nos ubicamos en el directorio principal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;python make_entrymd.py &lt;span class="s2"&gt;&amp;quot;Nueva Entrada&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;El resultado será:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;File created -&amp;gt; content/2015_02_31_nueva-entrada.md
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Se creará un archivo similar al siguiente:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Nueva&lt;/span&gt; &lt;span class="n"&gt;Entrada&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;03&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="n"&gt;Tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; 
+&lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; 
+&lt;span class="n"&gt;Slug&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;nueva&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;entrada&lt;/span&gt;
+&lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; 
+&lt;span class="n"&gt;Summary&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; 
+&lt;span class="n"&gt;status&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;draft&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;El status &lt;code&gt;draft&lt;/code&gt; te permite crear artículos en estado borrador. Muy útil si aún no deseas publicar o quieres que otra persona ĺo revise. Pelican no mostrará tu artículo hasta que  borres la línea &lt;code&gt;status: draft&lt;/code&gt;. Hasta entonces lo guardará en la carpeta &lt;code&gt;drafts&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Posts con la forma: /año/mes/dia/nombre-de-post.html&lt;/h2&gt;
+&lt;p&gt;Agregamos al archivo &lt;code&gt;pelicanconf.py&lt;/code&gt; lo siguiente:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Formating URLs&lt;/span&gt;
+&lt;span class="n"&gt;ARTICLE_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;{date:%Y}/{date:%m}/{date:&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;}/{slug}.html&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;ARTICLE_SAVE_AS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;{date:%Y}/{date:%m}/{date:&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;}/{slug}.html&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Generando nuestra web&lt;/h2&gt;
+&lt;p&gt;Ahora ya tienes todo para escribir tus artículos y generar tu web. ¡Adelante!&lt;/p&gt;
+&lt;h4&gt;Crea un post (si usas el script &lt;code&gt;make_entry/md.py&lt;/code&gt;)&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;python make_entrymd.py &lt;span class="s2"&gt;&amp;quot;Nombre de tu nuevo post&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Escribe un artículo&lt;/h4&gt;
+&lt;p&gt;Entra a la carpeta &lt;code&gt;content&lt;/code&gt;, abre el archivo que acabas de crear y escribe un artículo. Yo estoy usando &lt;a href="http://pad.haroopress.com/user.html"&gt;Haroopress&lt;/a&gt; un procesador para Markdown que te permite ver los cambios en tiempo real mientras escribes. También puedes usar Vim, Emacs o SublimeText.&lt;/p&gt;
+&lt;h4&gt;Genera tu web&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;make devserver
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Puedes ver los cambios en tu blog entrando en: http://localhost:8000 &lt;/p&gt;
+&lt;p&gt;Y para salir escribe:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;make stopserver
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Empuja los cambios a tu repositorio&lt;/h4&gt;
+&lt;p&gt;Recuerda hacerlo desde la carpeta output&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
+&lt;span class="nv"&gt;$ &lt;/span&gt;git add --all
+&lt;span class="nv"&gt;$ &lt;/span&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;commit message&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Visita tu web.&lt;/p&gt;
+&lt;h1&gt;FIN&lt;/h1&gt;
+&lt;h2&gt;Comandos extras en caso de accidentes&lt;/h2&gt;
+&lt;h4&gt;Inicializar repositorio&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
+&lt;span class="nv"&gt;$ &lt;/span&gt;git init
+&lt;span class="nv"&gt;$ &lt;/span&gt;git remote add origin https://github.com/username/username.github.io.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Restaurar repositorio&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
+&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/username/username.github.io.git output
+&lt;span class="nv"&gt;$ &lt;/span&gt;pelican content
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
+&lt;span class="nv"&gt;$ &lt;/span&gt;git add --all
+&lt;span class="nv"&gt;$ &lt;/span&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;commit message&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Referencias&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/DandyDev/dandydev.net"&gt;Observa el archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;Cheat Sheet para Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Amy Hanlon, Migrating to Github Pages using Pelican&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Pelican Boostrap3 Theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Italo Farfán Vera</dc:creator><pubDate>Sun, 01 Mar 2015 11:46:00 +0100</pubDate><guid>tag:italofarfan.com,2015-03-01:posts/2015/03/01/mi-blog-con-pelican-y-github.html</guid><category>python</category><category>pelican</category></item></channel></rss>
