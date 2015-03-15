@@ -37,7 +37,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Italo Farfán Vera</dc:creator><pubDate>Tue, 03 Mar 2015 10:42:00 +0100</pubDate><guid>tag:,2015-03-03:posts/2015/03/03/inteligencia-artificial-y-big-data.html</guid><category>inteligencia artificial</category><category>big data</category></item><item><title>Mi blog con Pelican y Github</title><link>/posts/2015/03/01/mi-blog-con-pelican-y-github.html</link><description>&lt;p&gt;Cansado de lidiar con el editor de wordpress (y antes con el de blogger) decidí buscar herramientas que me ofrecieran construir un blog más limpio, integrar código y los notebooks de python más fácilmente y sobre todo alojamiento gratuito. A continuación dejaré unos tips que me ayudaron a configurar mi blog con dominio propio y te servirán si no eres informático.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Italo Farfán Vera</dc:creator><pubDate>Tue, 03 Mar 2015 10:42:00 +0100</pubDate><guid>tag:,2015-03-03:posts/2015/03/03/inteligencia-artificial-y-big-data.html</guid><category>inteligencia artificial</category><category>big data</category></item><item><title>Mi blog con Pelican y Github</title><link>/posts/2015/03/01/mi-blog-con-pelican-y-github.html</link><description>&lt;p&gt;Cansado de lidiar con el editor de wordpress (y antes con el de blogger) decidí buscar herramientas que me ofrecieran construir un blog más limpio, integrar código y los notebooks de python más fácilmente y sobre todo alojamiento gratuito. A continuación describiré como configuré mi blog con dominio propio usando Pelican y espero te sirva si no eres informático.&lt;/p&gt;
 &lt;h2&gt;Ingredientes:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Pelican: un generador de sitios estáticos construido con Python. Hay muchos más, me quede con Pelican por la comunidad activa (lo que significa: más documentación, plugins, plantillas).&lt;/li&gt;
@@ -212,8 +212,8 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;h2&gt;Automatizar creación de archivos&lt;/h2&gt;
 &lt;p&gt;Para poder crear más rápido los posts podemos hacer uso de un script:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Para rST: &lt;code&gt;make_entry.py&lt;/code&gt;, de Nafiul Islam &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Para md: &lt;code&gt;make_entrymd.py&lt;/code&gt;, modifiqué el archivo para que funcione con md. &lt;a href="https://github.com/italofarfan"&gt;Descárgalo aquí&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Para reStructuredText: &lt;code&gt;make_entry.py&lt;/code&gt;, de &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation"&gt;Nafiul Islam&lt;/a&gt;. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entry.py"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Para Markdown: &lt;code&gt;make_entrymd.py&lt;/code&gt;, modifiqué el archivo para que funcione con md. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Para ejecutarlo nos ubicamos en el directorio principal:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;python make_entrymd.py &lt;span class="s2"&gt;&amp;quot;Nueva Entrada&amp;quot;&lt;/span&gt;
@@ -237,7 +237,7 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;El status &lt;code&gt;draft&lt;/code&gt; te permite crear artículos en estado borrador. Muy útil si aún no deseas publicar o quieres que otra persona ĺo revise. Pelican no mostrará tu artículo hasta que  borres la línea &lt;code&gt;status: draft&lt;/code&gt;. Hasta entonces lo guardará en la carpeta &lt;code&gt;drafts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El status &lt;code&gt;draft&lt;/code&gt; te permite crear artículos en estado borrador. Muy útil si aún no deseas publicar o quieres que otra persona ĺo revise. Pelican no mostrará tu artículo hasta que  borres la línea &lt;code&gt;status: draft&lt;/code&gt; o la cambies por &lt;code&gt;status: published&lt;/code&gt; . Hasta entonces lo guardará en la carpeta &lt;code&gt;drafts&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Posts con la forma: /año/mes/dia/nombre-de-post.html&lt;/h2&gt;
 &lt;p&gt;Agregamos al archivo &lt;code&gt;pelicanconf.py&lt;/code&gt; lo siguiente:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Formating URLs&lt;/span&gt;

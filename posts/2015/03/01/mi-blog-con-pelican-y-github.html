@@ -14,13 +14,13 @@
 
         <meta name="author" content="Italo Farfán Vera" />
         <meta name="keywords" content="python,pelican" />
-        <meta name="description" content="Guía para crear tu blog o web con Github, Pelican y dominio propio." />
+        <meta name="description" content="Guía para crear tu blog o web con Github, dominio propio y Pelican (generador de sitios web escrito en Python)." />
 
         <meta property="og:site_name" content="Italo Farfán" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Mi blog con Pelican y Github"/>
         <meta property="og:url" content="/posts/2015/03/01/mi-blog-con-pelican-y-github.html"/>
-        <meta property="og:description" content="Guía para crear tu blog o web con Github, Pelican y dominio propio."/>
+        <meta property="og:description" content="Guía para crear tu blog o web con Github, dominio propio y Pelican (generador de sitios web escrito en Python)."/>
         <meta property="article:published_time" content="2015-03-01" />
             <meta property="article:section" content="tutoriales" />
             <meta property="article:tag" content="python" />
@@ -58,6 +58,9 @@ Italo Farfán            </a>
             <ul class="nav navbar-nav">
                          <li><a href="/pages/sobre-mi.html">
                              Sobre mí
+                          </a></li>
+                         <li><a href="/pages/links.html">
+                             Links
                           </a></li>
                         <li >
                             <a href="/category/articulos.html">Artículos</a>
@@ -113,7 +116,7 @@ Italo Farfán            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Cansado de lidiar con el editor de wordpress (y antes con el de blogger) decidí buscar herramientas que me ofrecieran construir un blog más limpio, integrar código y los notebooks de python más fácilmente y sobre todo alojamiento gratuito. A continuación dejaré unos tips que me ayudaron a configurar mi blog con dominio propio y te servirán si no eres informático.</p>
+                <p>Cansado de lidiar con el editor de wordpress (y antes con el de blogger) decidí buscar herramientas que me ofrecieran construir un blog más limpio, integrar código y los notebooks de python más fácilmente y sobre todo alojamiento gratuito. A continuación describiré como configuré mi blog con dominio propio usando Pelican y espero te sirva si no eres informático.</p>
 <h2>Ingredientes:</h2>
 <ul>
 <li>Pelican: un generador de sitios estáticos construido con Python. Hay muchos más, me quede con Pelican por la comunidad activa (lo que significa: más documentación, plugins, plantillas).</li>
@@ -288,8 +291,8 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 <h2>Automatizar creación de archivos</h2>
 <p>Para poder crear más rápido los posts podemos hacer uso de un script:</p>
 <ul>
-<li>Para rST: <code>make_entry.py</code>, de Nafiul Islam <a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation">Descárgalo aquí</a>.</li>
-<li>Para md: <code>make_entrymd.py</code>, modifiqué el archivo para que funcione con md. <a href="https://github.com/italofarfan">Descárgalo aquí</a></li>
+<li>Para reStructuredText: <code>make_entry.py</code>, de <a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation">Nafiul Islam</a>. <a href="https://github.com/italofarfan/blog/blob/master/make_entry.py">Descárgalo aquí</a>.</li>
+<li>Para Markdown: <code>make_entrymd.py</code>, modifiqué el archivo para que funcione con md. <a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py">Descárgalo aquí</a>.</li>
 </ul>
 <p>Para ejecutarlo nos ubicamos en el directorio principal:</p>
 <div class="highlight"><pre> <span class="nv">$ </span>python make_entrymd.py <span class="s2">&quot;Nueva Entrada&quot;</span>
@@ -313,7 +316,7 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 </pre></div>
 
 
-<p>El status <code>draft</code> te permite crear artículos en estado borrador. Muy útil si aún no deseas publicar o quieres que otra persona ĺo revise. Pelican no mostrará tu artículo hasta que  borres la línea <code>status: draft</code>. Hasta entonces lo guardará en la carpeta <code>drafts</code>.</p>
+<p>El status <code>draft</code> te permite crear artículos en estado borrador. Muy útil si aún no deseas publicar o quieres que otra persona ĺo revise. Pelican no mostrará tu artículo hasta que  borres la línea <code>status: draft</code> o la cambies por <code>status: published</code> . Hasta entonces lo guardará en la carpeta <code>drafts</code>.</p>
 <h2>Posts con la forma: /año/mes/dia/nombre-de-post.html</h2>
 <p>Agregamos al archivo <code>pelicanconf.py</code> lo siguiente:</p>
 <div class="highlight"><pre><span class="c"># Formating URLs</span>
@@ -434,6 +437,8 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
                 <li class="list-group-item"><a href="http://twitter.com/italoFFVV"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
                 <li class="list-group-item"><a href="https://github.com/italofarfan"><i class="fa fa-github-square fa-lg"></i> github</a></li>
                 <li class="list-group-item"><a href="http://www.linkedin.com/in/italoffvv/"><i class="fa fa-linkedin-square fa-lg"></i> linkedIn</a></li>
+                <li class="list-group-item"><a href="https://plus.google.com/u/0/103161686610742017026/posts"><i class="fa fa-google-plus-square fa-lg"></i> Google Plus</a></li>
+                <li class="list-group-item"><a href="http://italofarfan.com/feeds/all.rss.xml"><i class="fa fa-rss-square fa-lg"></i> RSS</a></li>
               </ul>
             </li>
 
@@ -442,8 +447,8 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
-                        <a href="/tag/python.html">
-                            python
+                        <a href="/tag/big-data.html">
+                            big data
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -452,8 +457,8 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="/tag/big-data.html">
-                            big data
+                        <a href="/tag/python.html">
+                            python
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -463,25 +468,6 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
                     </li>
                 </ul>
             </li>
-    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://productos.viz-analytics.com/leonardo/" target="_blank">
-                Leonardo Cloud
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://viz-analytics.com" target="_blank">
-                Viz Analytics
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://www.es.python.org/" target="_blank">
-                Python España
-            </a>
-        </li>
-      </ul>
-    </li>
     </ul>
 </section>
             </aside>
