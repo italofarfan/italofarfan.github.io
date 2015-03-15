@@ -151,9 +151,11 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 
 
 &lt;p&gt;Si aún te quedan dudas echa un vistazo &lt;a href="https://github.com/DandyDev/dandydev.net"&gt;al archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Más información:
-&lt;em&gt; &lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Documentación de la plantilla Bootstrap3&lt;/a&gt;
-&lt;/em&gt;  &lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican por Amy Hanlon&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Más información:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Documentación de la plantilla Bootstrap3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican por Amy Hanlon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Agregando Disqus, Google Analytics y Addthis (botones para compartir)&lt;/h2&gt;
 &lt;p&gt;Se supone que ya tienes una cuenta en estos servicios gratuitos.&lt;/p&gt;
 &lt;ul&gt;
@@ -178,11 +180,13 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;li&gt;Guarda el archivo &lt;code&gt;CNAME&lt;/code&gt; en la carpeta output&lt;/li&gt;
 &lt;li&gt;Entra al panel de control de tu proveedor de dominio y crea un registro CNAME que apunte a tu_usuario.github.io o un registro A añadiendo los siguientes IP &lt;code&gt;192.30.252.153&lt;/code&gt; y &lt;code&gt;192.30.252.154&lt;/code&gt;. En mi caso Strato solo me déjo agregar un IP e igual funciona.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Más info:
-&lt;em&gt; &lt;a href="https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro CNAME&lt;/a&gt;
-&lt;/em&gt; &lt;a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro A&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Más info:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro CNAME&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro A&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Escribiendo artículos en reStructuredText(rST) y Markdown(md)&lt;/h2&gt;
-&lt;p&gt;Creamos un archivo con la extensión .rst o .md y lo guardamos en la carpeta content.&lt;/p&gt;
+&lt;p&gt;Creamos un archivo con la extensión &lt;code&gt;.rst&lt;/code&gt; o &lt;code&gt;.md&lt;/code&gt; y lo guardamos en la carpeta &lt;code&gt;content&lt;/code&gt;.&lt;/p&gt;
 &lt;h4&gt;Ejemplo en reStructuredTex&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Mi&lt;/span&gt; &lt;span class="n"&gt;primer&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;
 &lt;span class="cp"&gt;##############&lt;/span&gt;
@@ -212,8 +216,8 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;h2&gt;Automatizar creación de archivos&lt;/h2&gt;
 &lt;p&gt;Para poder crear más rápido los posts podemos hacer uso de un script:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Para reStructuredText: &lt;code&gt;make_entry.py&lt;/code&gt;, de &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation"&gt;Nafiul Islam&lt;/a&gt;. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entry.py"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Para Markdown: &lt;code&gt;make_entrymd.py&lt;/code&gt;, modifiqué el archivo para que funcione con md. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Para reStructuredText: &lt;code&gt;make_entry.py&lt;/code&gt;, de &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation"&gt;Nafiul Islam&lt;/a&gt;. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entry.py"&gt;Descargar aquí&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Para Markdown: &lt;code&gt;make_entrymd.py&lt;/code&gt;, modifiqué el archivo para que funcione con md. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py"&gt;Descargar aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Para ejecutarlo nos ubicamos en el directorio principal:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;python make_entrymd.py &lt;span class="s2"&gt;&amp;quot;Nueva Entrada&amp;quot;&lt;/span&gt;
@@ -276,7 +280,7 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Visita tu web.&lt;/p&gt;
+&lt;h3&gt;Visita tu web&lt;/h3&gt;
 &lt;h1&gt;FIN&lt;/h1&gt;
 &lt;h2&gt;Comandos extras en caso de accidentes&lt;/h2&gt;
 &lt;h4&gt;Inicializar repositorio&lt;/h4&gt;
@@ -299,8 +303,8 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 
 &lt;h2&gt;Referencias&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/DandyDev/dandydev.net"&gt;Observa el archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;Cheat Sheet para Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/DandyDev/dandydev.net"&gt;Archivo pelicancof.py y publishconf.py del blog de DandyDev, creador de plantilla Booostrap3&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;Cheat Sheet para Markdown&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Amy Hanlon, Migrating to Github Pages using Pelican&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Pelican Boostrap3 Theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Pelican Boostrap3 Theme&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="python"></category><category term="pelican"></category></entry></feed>

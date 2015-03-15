@@ -230,9 +230,11 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 
 
 <p>Si aún te quedan dudas echa un vistazo <a href="https://github.com/DandyDev/dandydev.net">al archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3</a></p>
-<p>Más información:
-<em> <a href="https://github.com/DandyDev/pelican-bootstrap3">Documentación de la plantilla Bootstrap3</a>
-</em>  <a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Migrating to GitHub Pages using Pelican por Amy Hanlon</a></p>
+<p>Más información:</p>
+<ul>
+<li><a href="https://github.com/DandyDev/pelican-bootstrap3">Documentación de la plantilla Bootstrap3</a></li>
+<li><a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Migrating to GitHub Pages using Pelican por Amy Hanlon</a></li>
+</ul>
 <h2>Agregando Disqus, Google Analytics y Addthis (botones para compartir)</h2>
 <p>Se supone que ya tienes una cuenta en estos servicios gratuitos.</p>
 <ul>
@@ -257,11 +259,13 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 <li>Guarda el archivo <code>CNAME</code> en la carpeta output</li>
 <li>Entra al panel de control de tu proveedor de dominio y crea un registro CNAME que apunte a tu_usuario.github.io o un registro A añadiendo los siguientes IP <code>192.30.252.153</code> y <code>192.30.252.154</code>. En mi caso Strato solo me déjo agregar un IP e igual funciona.</li>
 </ul>
-<p>Más info:
-<em> <a href="https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/">Ayuda de Github para crear un registro CNAME</a>
-</em> <a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/">Ayuda de Github para crear un registro A</a></p>
+<p>Más info:</p>
+<ul>
+<li><a href="https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/">Ayuda de Github para crear un registro CNAME</a></li>
+<li><a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/">Ayuda de Github para crear un registro A</a></li>
+</ul>
 <h2>Escribiendo artículos en reStructuredText(rST) y Markdown(md)</h2>
-<p>Creamos un archivo con la extensión .rst o .md y lo guardamos en la carpeta content.</p>
+<p>Creamos un archivo con la extensión <code>.rst</code> o <code>.md</code> y lo guardamos en la carpeta <code>content</code>.</p>
 <h4>Ejemplo en reStructuredTex</h4>
 <div class="highlight"><pre><span class="n">Mi</span> <span class="n">primer</span> <span class="n">post</span>
 <span class="cp">##############</span>
@@ -291,8 +295,8 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 <h2>Automatizar creación de archivos</h2>
 <p>Para poder crear más rápido los posts podemos hacer uso de un script:</p>
 <ul>
-<li>Para reStructuredText: <code>make_entry.py</code>, de <a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation">Nafiul Islam</a>. <a href="https://github.com/italofarfan/blog/blob/master/make_entry.py">Descárgalo aquí</a>.</li>
-<li>Para Markdown: <code>make_entrymd.py</code>, modifiqué el archivo para que funcione con md. <a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py">Descárgalo aquí</a>.</li>
+<li>Para reStructuredText: <code>make_entry.py</code>, de <a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation">Nafiul Islam</a>. <a href="https://github.com/italofarfan/blog/blob/master/make_entry.py">Descargar aquí</a>.</li>
+<li>Para Markdown: <code>make_entrymd.py</code>, modifiqué el archivo para que funcione con md. <a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py">Descargar aquí</a>.</li>
 </ul>
 <p>Para ejecutarlo nos ubicamos en el directorio principal:</p>
 <div class="highlight"><pre> <span class="nv">$ </span>python make_entrymd.py <span class="s2">&quot;Nueva Entrada&quot;</span>
@@ -355,7 +359,7 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 </pre></div>
 
 
-<p>Visita tu web.</p>
+<h3>Visita tu web</h3>
 <h1>FIN</h1>
 <h2>Comandos extras en caso de accidentes</h2>
 <h4>Inicializar repositorio</h4>
@@ -378,10 +382,10 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 
 <h2>Referencias</h2>
 <ul>
-<li><a href="https://github.com/DandyDev/dandydev.net">Observa el archivo pelicancof.py y publishconf.py de DandyDev creador de plantilla Booostrap3</a></li>
-<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Cheat Sheet para Markdown</a></li>
+<li><a href="https://github.com/DandyDev/dandydev.net">Archivo pelicancof.py y publishconf.py del blog de DandyDev, creador de plantilla Booostrap3</a>.</li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Cheat Sheet para Markdown</a>.</li>
 <li><a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html">Amy Hanlon, Migrating to Github Pages using Pelican</a>.</li>
-<li><a href="https://github.com/DandyDev/pelican-bootstrap3">Pelican Boostrap3 Theme</a></li>
+<li><a href="https://github.com/DandyDev/pelican-bootstrap3">Pelican Boostrap3 Theme</a>.</li>
 </ul>
             </div>
             <!-- /.entry-content -->
@@ -447,23 +451,23 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
-                        <a href="/tag/big-data.html">
-                            big data
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="/tag/inteligencia-artificial.html">
-                            inteligencia artificial
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
                         <a href="/tag/python.html">
                             python
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
+                        <a href="/tag/big-data.html">
+                            big data
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="/tag/pelican.html">
                             pelican
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="/tag/inteligencia-artificial.html">
+                            inteligencia artificial
                         </a>
                     </li>
                 </ul>
