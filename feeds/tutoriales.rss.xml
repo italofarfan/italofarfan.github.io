@@ -8,16 +8,15 @@
 &lt;/ul&gt;
 &lt;h2&gt;2. Configuración de GitHub Pages&lt;/h2&gt;
 &lt;p&gt;Entra a  &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt; y crea un nuevo repositorio usando tu nombre de usuario, quedará de la forma: &lt;code&gt;tu-usuario.github.io&lt;/code&gt;.
-&lt;img alt="Crear repositorio GitHub" src="images/crear-repositorio.png" /&gt;
-&lt;img src="images/crear-repositorio.png" alt="[title text | "Creando Repositorio Github" ["Creando repositorio Github"]]" class="[center]" title="[title text | "Creando Repositorio Github" ["Creando repositorio Github"]]"&gt;&lt;/p&gt;
+&lt;img alt="Crear repositorio GitHub" src="/images/crear-repositorio.png" /&gt;&lt;/p&gt;
 &lt;p&gt;En este nuevo repositorio se alojará el contenido de tu blog. También podrías haber seguido las instrucciones de &lt;a href="http://pages.github.com/"&gt;Github Pages&lt;/a&gt; para crear tu nuevo repositorio, pero sólo hasta el paso 1 (crear nuevo repositorio), ya que ellos te animarán a usar otro generador de sitios web, llamado Jekyll (que creo esta construido en Ruby).&lt;/p&gt;
 &lt;p&gt;La dirección de tu nuevo repositorio será: &lt;code&gt;https://github.com/usuario/usuario.github.io&lt;/code&gt;. Mi repositorio con mi usuario &lt;em&gt;italofarfan&lt;/em&gt; quedo así:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Verificar repositorio GitHub" src="images/verificar-repositorio.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Verificar repositorio GitHub" src="/images/verificar-repositorio.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;3. Instalación y configuración de Pelican&lt;/h2&gt;
 &lt;p&gt;Hay que instalar Pelican y Markdown. Markdown es un lenguaje sencillo para generar contenido HTML sin necesidad de saber HTML. Pelican ya viene con  reStructuredText (reST) que también sirve para generar contenido HTML y es parte del proyecto Doctilus dentro de la comunidad de Python, sin embargo para Markdown existe un procesador amigable que te muestra los cambios mientras escribes y podría facilitarte las cosas. Yo por el momento uso los dos.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Haroopad -Escribiendo mi primer artículo" src="images/haroopad.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Haroopad -Escribiendo mi primer artículo" src="/images/haroopad.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Empecemos con la instalación. Abrimos un terminal (Crtl+ Alt + T) e instalamos &lt;a href="https://pip.pypa.io/en/latest/installing.html"&gt;PIP&lt;/a&gt; (un herramienta para instalar paquetes escritos en Python). Si ya lo tienes instalado salta al paso siguiente:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install python-pip
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install python-pip
 &lt;/pre&gt;&lt;/div&gt;
 
 

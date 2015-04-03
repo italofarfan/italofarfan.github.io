@@ -125,16 +125,15 @@ Italo Farfán            </a>
 </ul>
 <h2>2. Configuración de GitHub Pages</h2>
 <p>Entra a  <a href="http://github.com/">GitHub</a> y crea un nuevo repositorio usando tu nombre de usuario, quedará de la forma: <code>tu-usuario.github.io</code>.
-<img alt="Crear repositorio GitHub" src="images/crear-repositorio.png" />
-<img src="images/crear-repositorio.png" alt="[title text | "Creando Repositorio Github" ["Creando repositorio Github"]]" class="[center]" title="[title text | "Creando Repositorio Github" ["Creando repositorio Github"]]"></p>
+<img alt="Crear repositorio GitHub" src="/images/crear-repositorio.png" /></p>
 <p>En este nuevo repositorio se alojará el contenido de tu blog. También podrías haber seguido las instrucciones de <a href="http://pages.github.com/">Github Pages</a> para crear tu nuevo repositorio, pero sólo hasta el paso 1 (crear nuevo repositorio), ya que ellos te animarán a usar otro generador de sitios web, llamado Jekyll (que creo esta construido en Ruby).</p>
 <p>La dirección de tu nuevo repositorio será: <code>https://github.com/usuario/usuario.github.io</code>. Mi repositorio con mi usuario <em>italofarfan</em> quedo así:</p>
-<p><img alt="Verificar repositorio GitHub" src="images/verificar-repositorio.png" /></p>
+<p><img alt="Verificar repositorio GitHub" src="/images/verificar-repositorio.png" /></p>
 <h2>3. Instalación y configuración de Pelican</h2>
 <p>Hay que instalar Pelican y Markdown. Markdown es un lenguaje sencillo para generar contenido HTML sin necesidad de saber HTML. Pelican ya viene con  reStructuredText (reST) que también sirve para generar contenido HTML y es parte del proyecto Doctilus dentro de la comunidad de Python, sin embargo para Markdown existe un procesador amigable que te muestra los cambios mientras escribes y podría facilitarte las cosas. Yo por el momento uso los dos.</p>
-<p><img alt="Haroopad -Escribiendo mi primer artículo" src="images/haroopad.png" /></p>
+<p><img alt="Haroopad -Escribiendo mi primer artículo" src="/images/haroopad.png" /></p>
 <p>Empecemos con la instalación. Abrimos un terminal (Crtl+ Alt + T) e instalamos <a href="https://pip.pypa.io/en/latest/installing.html">PIP</a> (un herramienta para instalar paquetes escritos en Python). Si ya lo tienes instalado salta al paso siguiente:</p>
-<div class="highlight"><pre>sudo apt-get install python-pip
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install python-pip
 </pre></div>
 
 
@@ -403,6 +402,36 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
             <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
     </div>
     <!-- AddThis Button END -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'italofarfan'; // required: replace example with your forum shortname
+
+                    var disqus_identifier = 'mi-blog-con-pelican-y-github';
+                var disqus_url = '/posts/2015/03/01/mi-blog-con-pelican-y-github.html';
+
+            var disqus_config = function () {
+                this.language = "es";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
         </article>
     </section>
 
@@ -427,13 +456,13 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
             <li class="list-group-item"><a href="/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
-                        <a href="/tag/big-data.html">
-                            big data
+                        <a href="/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="/tag/pelican.html">
-                            pelican
+                        <a href="/tag/inteligencia-artificial.html">
+                            inteligencia artificial
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -442,8 +471,8 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="/tag/inteligencia-artificial.html">
-                            inteligencia artificial
+                        <a href="/tag/big-data.html">
+                            big data
                         </a>
                     </li>
                 </ul>
@@ -478,6 +507,21 @@ Do you want to upload your website using Rackspace Cloud Files? <span class="o">
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="/theme/js/respond.min.js"></script>
 
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'italofarfan'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
     <!-- Google Analytics -->
     <script type="text/javascript">
 
