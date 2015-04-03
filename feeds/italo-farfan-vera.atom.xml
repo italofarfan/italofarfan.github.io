@@ -4,6 +4,7 @@
 &lt;p&gt;Cuando en Inteligencia Artificial hablamos de algoritmos genéticos, hablamos de algoritmos de búsqueda inspirados en la teoría de evolución. Un algoritmo es un proceso o conjunto de reglas que permite resolver de manera eficaz un problema. Mejores algoritmos serán eficientes, peores algoritmos sólo serán eficaces.&lt;/p&gt;
 &lt;p&gt;La Inteligencia Artificial va de la mano del desarrollo tecnológico. Si bien es cierto, la Inteligencia Artificial emergió con fuerza en los 40s con la aparición de las  primeras computadoras electrónicas. A medida que la tecnología nos ha ido proporcionando mayor capacidad de procesamiento y almacenamiento, la Inteligencia Artificial ha ido cobrando mayor protagonismo en la solución de problemas complejos. En la actualidad hablamos de sistemas inteligentes capaces de realizar transacciones de compra y venta de acciones en tiempo real, asistentes virtuales de atención al consumidor, aplicaciones orientadas a la fidelización de clientes, etc.&lt;/p&gt;
 &lt;p&gt;Incluso es muy probable que se haya aplicado la teoría de juegos en las negociaciones entre la Unión Europea y Grecia. La teoría de juegos busca predecir cuál será el resultado más probable en una negociación, ya sea entre personas, empresas o países, donde pueden estar en juego millones de euros. Debemos recordar que todo esto es posible gracias a que somos capaces de convertir en conocimiento la información que extraemos de los datos o del Big Data.&lt;/p&gt;
+&lt;img alt="Three main subcategories; machine learning, curated knowledge and reverse engineering the brain." class="align-center" src="images/ia-tres.png" /&gt;
 &lt;p&gt;&lt;strong&gt;Cuando hablamos de Big Data&lt;/strong&gt; nos referimos a una gran cantidad de datos que sobrepasan las capacidades de procesamiento de las herramientas tradicionales. Podríamos hablar de muchos datos cuando sobrepasan los terabytes pero esto es relativo (recordemos que lo que es Big Data hoy no lo era hace cinco años).  Para saber si nos enfrentamos a una problema de big data tenemos que tener en cuenta el volumen (el tamaño de los datos), la velocidad (de llegada y procesamiento) y la variedad (datos de  registros web, audio, social media, sensores, etc) &lt;a class="footnote-reference" href="#id6" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;En una organización los datos pueden venir de fuentes internas (por ejemplo: información de diferentes departamentos que incluyen costes, historial de clientes, stock, etc )  y de fuentes externas de información (por ejemplo: lo que dicen mis clientes en una red social). Esto para el sector retail y finanzas puede ser muy útil de cara al desarrollo de nuevos productos e identificación de tendencias.&lt;/p&gt;
 &lt;p&gt;El sector minero también tiene la necesidad de analizar grandes volúmenes de datos, provenientes de tareas como la prospección, almacenado de información geológica y producción &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[3]&lt;/a&gt;. Tratar los datos como un activo les permite: reducir los costes de mantenimiento y los tiempos no productivos de las máquinas, lo cual repercute positivamente en sus beneficios (hablamos de millones de dólares).&lt;/p&gt;
@@ -37,23 +38,34 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="inteligencia artificial"></category><category term="big data"></category></entry><entry><title>Mi blog con Pelican y Github</title><link href="/posts/2015/03/01/mi-blog-con-pelican-y-github.html" rel="alternate"></link><updated>2015-03-01T11:46:00+01:00</updated><author><name>Italo Farfán Vera</name></author><id>tag:,2015-03-01:posts/2015/03/01/mi-blog-con-pelican-y-github.html</id><summary type="html">&lt;p&gt;Cansado de lidiar con el editor de wordpress (y antes con el de blogger) decidí buscar herramientas que me ofrecieran construir un blog más limpio, integrar código y los notebooks de python más fácilmente y sobre todo alojamiento gratuito. A continuación describiré como configuré mi blog con dominio propio usando Pelican y espero te sirva si no eres informático.&lt;/p&gt;
-&lt;h2&gt;Ingredientes:&lt;/h2&gt;
+</summary><category term="inteligencia artificial"></category><category term="big data"></category></entry><entry><title>Mi blog con Pelican y Github</title><link href="/posts/2015/03/01/mi-blog-con-pelican-y-github.html" rel="alternate"></link><updated>2015-03-01T11:46:00+01:00</updated><author><name>Italo Farfán Vera</name></author><id>tag:,2015-03-01:posts/2015/03/01/mi-blog-con-pelican-y-github.html</id><summary type="html">&lt;p&gt;Hace un par de meses decidí mudar mi blog de Wordpress a Github (usando Pelican) por la flexibilidad y facilidad para insertar notebooks de ipython, líneas de código e incluso ejemplos con D3 para hacer visualización de datos. Para escribir los posts puedes usar Markdown o reStructuredText, es igual de fácil que escribir entradas con el editor de Wordpress o Blogger.&lt;/p&gt;
+&lt;h2&gt;1. Ingredientes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Pelican: un generador de sitios estáticos construido con Python. Hay muchos más, me quede con Pelican por la comunidad activa (lo que significa: más documentación, plugins, plantillas).&lt;/li&gt;
-&lt;li&gt;GitHub Pages: que permite alojar webs para ti y tus proyectos alojadas en tu repositorio Github.&lt;/li&gt;
-&lt;li&gt;Dominio propio: no es obligatorio. Si no lo tienes la url de tu blog será usuario.github.io&lt;/li&gt;
+&lt;li&gt;GitHub Pages: que permite alojar webs personales y de tus proyectos desde tu repositorio GitHub.&lt;/li&gt;
+&lt;li&gt;Dominio propio: no es obligatorio. Si no lo tienes la url de tu blog será &lt;code&gt;tu-usuario.github.io&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Configuración de GitHub Pages&lt;/h2&gt;
-&lt;p&gt;Crea un repositorio en github con el nombre: usuario.github.io &lt;/p&gt;
-&lt;p&gt;Si sigues las instrucciones de &lt;a href="http://pages.github.com/"&gt;Github Pages&lt;/a&gt; solo crea el repositorio (primer paso), nada más. Allí es donde se alojará el contenido de tu blog/web.&lt;/p&gt;
-&lt;h2&gt;Instalación y configuración de Pelican&lt;/h2&gt;
-&lt;p&gt;Tienes que instalar Pelican y Markdown, este último es opcional. Markdown es un lenguaje sencillo para generar contenido HTML sin necesidad de saber HTML. Pelican usa reStructuredText (rST) que también es fácil de manejar. &lt;a href="http://docs.getpelican.com/en/3.1.1/getting_started.html#installing-pelican"&gt;Más info sobre paquetes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;2. Configuración de GitHub Pages&lt;/h2&gt;
+&lt;p&gt;Entra a  &lt;a href="http://github.com/"&gt;GitHub&lt;/a&gt; y crea un nuevo repositorio usando tu nombre de usuario, quedará de la forma: &lt;code&gt;tu-usuario.github.io&lt;/code&gt;.
+&lt;img alt="Crear repositorio GitHub" src="images/crear-repositorio.png" /&gt;
+&lt;img src="images/crear-repositorio.png" alt="[title text | "Creando Repositorio Github" ["Creando repositorio Github"]]" class="[center]" title="[title text | "Creando Repositorio Github" ["Creando repositorio Github"]]"&gt;&lt;/p&gt;
+&lt;p&gt;En este nuevo repositorio se alojará el contenido de tu blog. También podrías haber seguido las instrucciones de &lt;a href="http://pages.github.com/"&gt;Github Pages&lt;/a&gt; para crear tu nuevo repositorio, pero sólo hasta el paso 1 (crear nuevo repositorio), ya que ellos te animarán a usar otro generador de sitios web, llamado Jekyll (que creo esta construido en Ruby).&lt;/p&gt;
+&lt;p&gt;La dirección de tu nuevo repositorio será: &lt;code&gt;https://github.com/usuario/usuario.github.io&lt;/code&gt;. Mi repositorio con mi usuario &lt;em&gt;italofarfan&lt;/em&gt; quedo así:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Verificar repositorio GitHub" src="images/verificar-repositorio.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;3. Instalación y configuración de Pelican&lt;/h2&gt;
+&lt;p&gt;Hay que instalar Pelican y Markdown. Markdown es un lenguaje sencillo para generar contenido HTML sin necesidad de saber HTML. Pelican ya viene con  reStructuredText (reST) que también sirve para generar contenido HTML y es parte del proyecto Doctilus dentro de la comunidad de Python, sin embargo para Markdown existe un procesador amigable que te muestra los cambios mientras escribes y podría facilitarte las cosas. Yo por el momento uso los dos.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Haroopad -Escribiendo mi primer artículo" src="images/haroopad.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Empecemos con la instalación. Abrimos un terminal (Crtl+ Alt + T) e instalamos &lt;a href="https://pip.pypa.io/en/latest/installing.html"&gt;PIP&lt;/a&gt; (un herramienta para instalar paquetes escritos en Python). Si ya lo tienes instalado salta al paso siguiente:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install python-pip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Instalamos Pelican y Markdown:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pelican markdown
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Crea una carpeta por ejemplo, &lt;code&gt;blog&lt;/code&gt;. Esta contendrá todo lo necesario para crear tu blog/web, dentro de ella ejecutaremos &lt;code&gt;pelican quickstart&lt;/code&gt;. Pelican por medio de un diálogo te ayuda con la configuración.&lt;/p&gt;
+&lt;p&gt;Crea una carpeta llamada, por ejemplo, &lt;code&gt;blog&lt;/code&gt;. Esta contendrá todo lo necesario para crear tu blog/web, dentro de ella ejecutaremos &lt;code&gt;pelican quickstart&lt;/code&gt;. Pelican por medio de un diálogo te ayudará con la configuración.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir blog
 &lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
 &lt;span class="nv"&gt;$ &lt;/span&gt;pelican-quickstart
@@ -113,8 +125,8 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 
 &lt;p&gt;En pages podrás crear los archivos &lt;code&gt;about me&lt;/code&gt;, &lt;code&gt;contact&lt;/code&gt;, etc. Pelican los reconocerá sin problemas.&lt;/p&gt;
 &lt;p&gt;Pelican convertirá tus artículos guardados en &lt;code&gt;content&lt;/code&gt; en html y los guardará en la carpeta &lt;code&gt;output&lt;/code&gt;. Más adelante comentaré cómo hacer para que tengan el siguiente estilo: midominio.com/2015/01/31/nombre-de-mi posts.html&lt;/p&gt;
-&lt;p&gt;Es en &lt;code&gt;output&lt;/code&gt; donde se generará tu sitio web y es donde tendrás que colocar el archivo CNAME si deseas utilizar un dominio propio (tudominio.com).&lt;/p&gt;
-&lt;h2&gt;Subiendo nuestros cambios a la nube&lt;/h2&gt;
+&lt;p&gt;Es en &lt;code&gt;output&lt;/code&gt; donde se generará tu sitio web y es donde tendrás que colocar el archivo CNAME si deseas utilizar un dominio propio (tudominio.com). Más adelante hablaremos de ello.&lt;/p&gt;
+&lt;h3&gt;Configurando nuestro repositorio GitHub&lt;/h3&gt;
 &lt;p&gt;Tenemos que inicializar un repositorio github desde nuestra carpeta output y conectarlo con nuestro repositorio remoto creado anteriormente (usuario.github.io).&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
 &lt;span class="nv"&gt;$ &lt;/span&gt;git init
@@ -126,7 +138,7 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 
 
 &lt;p&gt;Ya estás listo para publicar pero &lt;strong&gt;&lt;em&gt;*no todas las plantillas ofrecen soporte a todos los plugins&lt;/em&gt;&lt;/strong&gt;*. Por ejemplo Disqus, que permite integrar comentarios en tu blog, no funciona con la plantilla por defecto. La plantilla que usa Amy y la mía funcionan. &lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Amy Hanlon tiene una guía en inglés muy completa&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Plugins y plantillas&lt;/h2&gt;
+&lt;h3&gt;Plugins y plantillas&lt;/h3&gt;
 &lt;p&gt;Yo estoy utilizando la plantilla pelican-bootstrap3 y el plugin Tipue Search para agregar el cuadro de búsqueda en la parte superior derecha. La plantilla es responsive.&lt;/p&gt;
 &lt;p&gt;Para usarlas lo más rápido es clonar el repositorio plugins.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone https://github.com/getpelican/pelican-themes
@@ -156,7 +168,7 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Documentación de la plantilla Bootstrap3&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Migrating to GitHub Pages using Pelican por Amy Hanlon&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Agregando Disqus, Google Analytics y Addthis (botones para compartir)&lt;/h2&gt;
+&lt;h3&gt;Agregando Disqus, Google Analytics y Addthis (botones para compartir)&lt;/h3&gt;
 &lt;p&gt;Se supone que ya tienes una cuenta en estos servicios gratuitos.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Disqus: necesitas de un &lt;code&gt;short_name&lt;/code&gt;, para ello registra tu web: https://disqus.com/admin/create/ Indica el nombre de tu sitio (SITE NAME) y una DISQUS_URL. Este último será tu shortname. Finalmente obtendrás algo como esto: http://short_name.disqus.com/admin/settings&lt;/li&gt;
@@ -174,18 +186,18 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://querbalken.net/howto-setup-comments-with-disqus-in-pelican-en.html"&gt;Howto Setup Comments with Disqus in Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Configurando dominio propio&lt;/h2&gt;
+&lt;h2&gt;4. Configurando dominio propio&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Crea un archivo &lt;code&gt;CNAME&lt;/code&gt; y dentro escribe tu dominio, por ejemplo: tudominio.com&lt;/li&gt;
 &lt;li&gt;Guarda el archivo &lt;code&gt;CNAME&lt;/code&gt; en la carpeta output&lt;/li&gt;
-&lt;li&gt;Entra al panel de control de tu proveedor de dominio y crea un registro CNAME que apunte a tu_usuario.github.io o un registro A añadiendo los siguientes IP &lt;code&gt;192.30.252.153&lt;/code&gt; y &lt;code&gt;192.30.252.154&lt;/code&gt;. En mi caso Strato solo me déjo agregar un IP e igual funciona.&lt;/li&gt;
+&lt;li&gt;Entra al panel de control de tu proveedor de dominio y crea un registro CNAME que apunte a tu_usuario.github.io o un registro A añadiendo las IP &lt;code&gt;192.30.252.153&lt;/code&gt; y &lt;code&gt;192.30.252.154&lt;/code&gt;. En mi caso Strato solo me déjo agregar un IP e igual funciona.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Más info:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro CNAME&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/"&gt;Ayuda de Github para crear un registro A&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Escribiendo artículos en reStructuredText(rST) y Markdown(md)&lt;/h2&gt;
+&lt;h2&gt;5. Escribiendo posts con reST y Md.&lt;/h2&gt;
 &lt;p&gt;Creamos un archivo con la extensión &lt;code&gt;.rst&lt;/code&gt; o &lt;code&gt;.md&lt;/code&gt; y lo guardamos en la carpeta &lt;code&gt;content&lt;/code&gt;.&lt;/p&gt;
 &lt;h4&gt;Ejemplo en reStructuredTex&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Mi&lt;/span&gt; &lt;span class="n"&gt;primer&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;
@@ -197,6 +209,8 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;slug&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;mi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;primer&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;post&lt;/span&gt;
 &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;TuNombre&lt;/span&gt;
 &lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;summary&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Versi&lt;/span&gt;&lt;span class="err"&gt;ó&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="n"&gt;corta&lt;/span&gt; &lt;span class="n"&gt;para&lt;/span&gt; &lt;span class="n"&gt;el&lt;/span&gt; &lt;span class="err"&gt;í&lt;/span&gt;&lt;span class="n"&gt;ndice&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;feeds&lt;/span&gt;
+
+&lt;span class="n"&gt;Escribe&lt;/span&gt; &lt;span class="n"&gt;aqu&lt;/span&gt;&lt;span class="err"&gt;í&lt;/span&gt; &lt;span class="n"&gt;el&lt;/span&gt; &lt;span class="n"&gt;contenido&lt;/span&gt; &lt;span class="n"&gt;de&lt;/span&gt; &lt;span class="n"&gt;tu&lt;/span&gt; &lt;span class="n"&gt;primer&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -213,13 +227,14 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;Automatizar creación de archivos&lt;/h2&gt;
-&lt;p&gt;Para poder crear más rápido los posts podemos hacer uso de un script:&lt;/p&gt;
+&lt;p&gt;Para escribir post con Markdown estoy usando &lt;a href="http://pad.haroopress.com/user.html"&gt;Haroopress&lt;/a&gt; que desde el Menu/Insert tienes todos los comandos necesarios. Y para reStructuredText estoy usando SublimeText.&lt;/p&gt;
+&lt;h3&gt;Automatizando la creación de archivos&lt;/h3&gt;
+&lt;p&gt;Para poder crear más rápido los posts podemos hacer uso de un script que deberás guardar en el directorio principal (&lt;code&gt;blog&lt;/code&gt;):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Para reStructuredText: &lt;code&gt;make_entry.py&lt;/code&gt;, de &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation"&gt;Nafiul Islam&lt;/a&gt;. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entry.py"&gt;Descargar aquí&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Para Markdown: &lt;code&gt;make_entrymd.py&lt;/code&gt;, modifiqué el archivo para que funcione con md. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py"&gt;Descargar aquí&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;reStructuredText: &lt;code&gt;make_entry.py&lt;/code&gt;, de &lt;a href="http://nafiulis.me/making-a-static-blog-with-pelican.html#automation"&gt;Nafiul Islam&lt;/a&gt;. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entry.py"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Markdown: &lt;code&gt;make_entrymd.py&lt;/code&gt;, modifiqué el archivo para que funcione con md. &lt;a href="https://github.com/italofarfan/blog/blob/master/make_entrymd.py"&gt;Descárgalo aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Para ejecutarlo nos ubicamos en el directorio principal:&lt;/p&gt;
+&lt;p&gt;Para ejecutarlo nos ubicamos en el directorio principal, reemplaza "nueva entrada" por el nombre que desees:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;python make_entrymd.py &lt;span class="s2"&gt;&amp;quot;Nueva Entrada&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -242,24 +257,16 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 
 
 &lt;p&gt;El status &lt;code&gt;draft&lt;/code&gt; te permite crear artículos en estado borrador. Muy útil si aún no deseas publicar o quieres que otra persona ĺo revise. Pelican no mostrará tu artículo hasta que  borres la línea &lt;code&gt;status: draft&lt;/code&gt; o la cambies por &lt;code&gt;status: published&lt;/code&gt; . Hasta entonces lo guardará en la carpeta &lt;code&gt;drafts&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Posts con la forma: /año/mes/dia/nombre-de-post.html&lt;/h2&gt;
-&lt;p&gt;Agregamos al archivo &lt;code&gt;pelicanconf.py&lt;/code&gt; lo siguiente:&lt;/p&gt;
+&lt;h3&gt;Posts con la forma: /año/mes/dia/nombre-post.html&lt;/h3&gt;
+&lt;p&gt;Si deseas que tus posts tengan la forma mi_usuario.github.io/2015/03/10/primera-entrada.html tendremos que agregar en el archivo &lt;code&gt;pelicanconf.py&lt;/code&gt; lo siguiente:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Formating URLs&lt;/span&gt;
 &lt;span class="n"&gt;ARTICLE_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;{date:%Y}/{date:%m}/{date:&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;}/{slug}.html&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;ARTICLE_SAVE_AS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;{date:%Y}/{date:%m}/{date:&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;}/{slug}.html&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;Generando nuestra web&lt;/h2&gt;
-&lt;p&gt;Ahora ya tienes todo para escribir tus artículos y generar tu web. ¡Adelante!&lt;/p&gt;
-&lt;h4&gt;Crea un post (si usas el script &lt;code&gt;make_entry/md.py&lt;/code&gt;)&lt;/h4&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;python make_entrymd.py &lt;span class="s2"&gt;&amp;quot;Nombre de tu nuevo post&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h4&gt;Escribe un artículo&lt;/h4&gt;
-&lt;p&gt;Entra a la carpeta &lt;code&gt;content&lt;/code&gt;, abre el archivo que acabas de crear y escribe un artículo. Yo estoy usando &lt;a href="http://pad.haroopress.com/user.html"&gt;Haroopress&lt;/a&gt; un procesador para Markdown que te permite ver los cambios en tiempo real mientras escribes. También puedes usar Vim, Emacs o SublimeText.&lt;/p&gt;
-&lt;h4&gt;Genera tu web&lt;/h4&gt;
+&lt;h2&gt;5. Generando tu blog&lt;/h2&gt;
+&lt;p&gt;Ahora ya tienes tienes escrito tu primer artículo toca generar tu web desde el directorio principal (blog):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;blog
 &lt;span class="nv"&gt;$ &lt;/span&gt;make devserver
 &lt;/pre&gt;&lt;/div&gt;
@@ -272,7 +279,7 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 
 
 &lt;h4&gt;Empuja los cambios a tu repositorio&lt;/h4&gt;
-&lt;p&gt;Recuerda hacerlo desde la carpeta output&lt;/p&gt;
+&lt;p&gt;Ahora toca alojar tu blog en tu repositorio remoto GitHub. Recuerda hacerlo desde la carpeta output.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
 &lt;span class="nv"&gt;$ &lt;/span&gt;git add --all
 &lt;span class="nv"&gt;$ &lt;/span&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;commit message&amp;quot;&lt;/span&gt;
@@ -280,9 +287,8 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3&gt;Visita tu web&lt;/h3&gt;
-&lt;h1&gt;FIN&lt;/h1&gt;
-&lt;h2&gt;Comandos extras en caso de accidentes&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Y eso es todo, ya sabes todo lo necesario para mantener tu blog ;)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;6. Comandos extras en caso de accidentes&lt;/h2&gt;
 &lt;h4&gt;Inicializar repositorio&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;output
 &lt;span class="nv"&gt;$ &lt;/span&gt;git init
@@ -301,10 +307,11 @@ Do you want to upload your website using Rackspace Cloud Files? &lt;span class="
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;Referencias&lt;/h2&gt;
+&lt;h2&gt;7. Referencias&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/DandyDev/dandydev.net"&gt;Archivo pelicancof.py y publishconf.py del blog de DandyDev, creador de plantilla Booostrap3&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;Cheat Sheet para Markdown&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://mathamy.com/migrating-to-github-pages-using-pelican.html"&gt;Amy Hanlon, Migrating to Github Pages using Pelican&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.getpelican.com/en/3.1.1/getting_started.html#installing-pelican"&gt;Documentación de Pelican - Getting Started&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;Pelican Boostrap3 Theme&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="python"></category><category term="pelican"></category></entry></feed>
