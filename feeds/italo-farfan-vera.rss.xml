@@ -1,5 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Italo Farfán</title><link>/</link><description></description><atom:link href="/feeds/italo-farfan-vera.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 03 Mar 2015 10:42:00 +0100</lastBuildDate><item><title>Inteligencia Artificial y Big Data</title><link>/posts/2015/03/03/inteligencia-artificial-y-big-data.html</link><description>&lt;p&gt;&lt;strong&gt;La Inteligencia Artificial&lt;/strong&gt; es un campo perteneciente a las Ciencias de la Computación cuyo objetivo es la creación de  software y/o hardware inteligente. Entendamos que cualquier sistema basado en hardware y software que pueda realizar exitosamente una tarea no trivial se dice que posee un grado de inteligencia artificial &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;. Una actividad no trivial podría ser: la toma de decisiones financieras, pilotar un helicóptero, desarrollar nuevos productos, realizar un plan de mantenimiento predictivo de máquinas, etc.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Italo Farfán</title><link>/</link><description></description><atom:link href="/feeds/italo-farfan-vera.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 06 Apr 2015 21:07:00 +0200</lastBuildDate><item><title>Paquetes Python para ciencia e ingeniería con Anaconda</title><link>/posts/2015/04/06/paquetes-python-con-anaconda.html</link><description>&lt;h2&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;Si estás utilizando Scikit-learn, Pandas u otro paquete de Python para ingeniería o ciencia sabrás que es una pérdida de tiempo estar buscando y descargando los paquetes que deseas instalar. Además de tener en cuenta la compatibilidad entre paquetes. Para evitar problemas usamos herramientas como VirtualEnv (para crear entornos virtuales y trabajar con distintas versiones de librerías) y PIP (para instalar paquetes).&lt;/p&gt;
+&lt;p&gt;La buena noticia es que existe Anaconda,  que nos permite instalar paquetes y gestionar entornos virtuales fácilmente, además de tener otras ventajas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ahorro de tiempo al instalar paquetes adicionales requeridos.&lt;/li&gt;
+&lt;li&gt;Tiene un administrador de paquetes y gestor de entornos virtuales.&lt;/li&gt;
+&lt;li&gt;No necesitas permisos de administrador.&lt;/li&gt;
+&lt;li&gt;Multiplataforma (Windows, Mac y Linux).&lt;/li&gt;
+&lt;li&gt;Es completamente gratuita, incluso para uso comercial y redistribución.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ahora pasemos a definir Anaconda, ver la instalación, creación de entornos virtuales y conocer otros comandos básicos.&lt;/p&gt;
+&lt;h2&gt;¿Qué es Anaconda?&lt;/h2&gt;
+&lt;p&gt;Anaconda es una distribución de Python multiplataforma, desarrollada por &lt;a href="http://continuum.io/"&gt;Continuum Analytics&lt;/a&gt;. Contiene una gran colección de paquetes y librerías para análisis de datos, computación científica e ingeniería. Si no deseas descargar la distribución completa (por tener un ancho de banda reducido, ...) puedes optar por &lt;strong&gt;Miniconda&lt;/strong&gt;, que contiene solamente el gestor de paquetes Conda y Python para luego instalar lo que necesites.&lt;/p&gt;
+&lt;h2&gt;Instalando Miniconda&lt;/h2&gt;
+&lt;p&gt;Descarga la versión que desees:
+&lt;em&gt; Conda: http://continuum.io/downloads
+&lt;/em&gt; Miniconda: http://conda.pydata.org/miniconda.html&lt;/p&gt;
+&lt;p&gt;Yo he descargado &lt;code&gt;Miniconda3-latest-Linux-x86_64.sh&lt;/code&gt;,  Miniconda Python 3.4 64-bit(bash installer) y guardado en la carpeta &lt;code&gt;Donwloads&lt;/code&gt;. Se recomienda usar Python 3, &lt;a href="http://www.getpython3.com/"&gt;que es el presente y futuro de Python&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Abrimos un terminal (Ctrl + Alt + t), vamos a la carpeta donde hemos guardado el instalador (en mi caso &lt;code&gt;Downloads&lt;/code&gt;) y procedemos con la instalación.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;Downloads
+bash Miniconda3-latest-Linux-x86_64.sh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Nos aparecerá un mensaje de bienvenida, presionamos enter y nos saldrá la licencia. Para dejar de leerla presiona &lt;code&gt;Crtl + c&lt;/code&gt; y para aceptar las condiciones escribimos "yes".&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Instalando Miniconda" src="/images/instalando-miniconda.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Nos quedarán dos preguntas más por responder, en mi caso he presionado "enter" y escrito "yes". Finalmente para activar los cambios abre un nuevo terminal. Abajo puedes ver como he respondido:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Miniconda3 will now be installed into this location:
+/home/italo/miniconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+&lt;span class="o"&gt;[&lt;/span&gt;/home/italo/miniconda3&lt;span class="o"&gt;]&lt;/span&gt; &amp;gt;&amp;gt;&amp;gt;
+&lt;span class="nv"&gt;PREFIX&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/italo/miniconda3
+installing: python-3.4.2-0 ...
+installing: conda-env-2.1.3-py34_0 ...
+installing: openssl-1.0.1k-0 ...
+installing: pycosat-0.6.1-py34_0 ...
+installing: pyyaml-3.11-py34_0 ...
+installing: readline-6.2-2 ...
+installing: requests-2.5.3-py34_0 ...
+installing: sqlite-3.8.4.1-0 ...
+installing: system-5.8-1 ...
+installing: tk-8.5.15-0 ...
+installing: xz-5.0.5-0 ...
+installing: yaml-0.1.4-0 ...
+installing: zlib-1.2.8-0 ...
+installing: conda-3.9.1-py34_0 ...
+Python 3.4.2 :: Continuum Analytics, Inc.
+creating default environment...
+installation finished.
+Do you wish the installer to prepend the Miniconda3 install location
+to PATH in your /home/italo/.bashrc ? &lt;span class="o"&gt;[&lt;/span&gt;yes|no&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;no&lt;span class="o"&gt;]&lt;/span&gt; &amp;gt;&amp;gt;&amp;gt; yes
+
+Prepending &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/italo/miniconda3/bin to PATH in /home/italo/.bashrc
+A backup will be made to: /home/italo/.bashrc-miniconda3.bak
+
+
+For this change to become active, you have to open a new terminal.
+
+Thank you &lt;span class="k"&gt;for &lt;/span&gt;installing Miniconda3!
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Actualizando Conda&lt;/h2&gt;
+&lt;p&gt;Primero, abrimos un nuevo terminal y verificamos si la instalación ha sido correcta.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda -V
+conda 3.9.1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Otra forma:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda info
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Actualizando Conda:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda update conda
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Entornos virtuales&lt;/h2&gt;
+&lt;p&gt;Ver los entornos que tenemos:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda info -e
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Nos mostrará los entornos creados. Yo tengo dos: django y root. El símbolo * indica en que entorno estamos. Cuando instalas Anaconda el entorno por defecto (default) será root.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# conda environments:&lt;/span&gt;
+&lt;span class="c"&gt;#&lt;/span&gt;
+django                   /home/italo/miniconda3/envs/django
+root                  *  /home/italo/miniconda3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Crear un entorno. Por ejemplo llamado django y utilizando Python 3:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda create -n django python
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Crear un entorno usando python 2. La versión de un paquete se indica con el signo "=". &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda create -n django &lt;span class="nv"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Activar un entorno. Por ejemplo el entorno "django":&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source &lt;/span&gt;activate django
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Observa que ahora el nombre del entorno aparecerá entre paréntesis.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;(&lt;/span&gt;django&lt;span class="o"&gt;)&lt;/span&gt;italo@italo-tosh:~&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Desactivar entorno django:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;(&lt;/span&gt;django&lt;span class="o"&gt;)&lt;/span&gt;italo@italo-tosh:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source &lt;/span&gt;deactivate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Eliminar un entorno:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda remove -n nombredelentorno --all
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Clonar un entorno:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;conda create -n nombredelnuevo --clone nombredelquequieresclonar
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Instalar paquetes&lt;/h2&gt;
+&lt;p&gt;Primero veamos los entornos que tenemos. Tenemos dos, el root (raíz) y django, que lo acabamos de crear.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;italo@italo-tosh:~&lt;span class="nv"&gt;$ &lt;/span&gt;conda info -e
+&lt;span class="c"&gt;# conda environments:&lt;/span&gt;
+&lt;span class="c"&gt;#&lt;/span&gt;
+django                   /home/italo/miniconda3/envs/django
+root                  *  /home/italo/miniconda3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Instalando paquetes en el entorno root. Por ejemplo el paquete Scipy:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;conda install scipy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Instalando paquetes en otro entorno:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda install -n mombredelentorno nombredelpaquete
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Instalando una versión específica. Por ejemplo: en el entorno de nombre myenv instalamos el paquete Scipy, versión 0.12.0&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda install -n myenv &lt;span class="nv"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;0.12.0
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Otra forma de instalar paquetes es activando el entorno y luego proceder con la instalación:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source &lt;/span&gt;activate nombredelentorno
+&lt;span class="nv"&gt;$ &lt;/span&gt;conda install nombredelpaquete
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Listar los paquetes instalados. Si estamos en el entorno root (entorno “myenv” desactivado):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda list -n myenv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Si estamos en el entorno "myenv" (el entorno "myenv" está activado).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda list
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ver si un paquete ya está instalado:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda list -n myenv scipy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Comprobar si un paquete esta disponible para instalar:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda search nombredelpaquete
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;O también:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;conda search &lt;span class="s2"&gt;&amp;quot;^django$&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Usar PIP para instalar otros paquetes&lt;/h2&gt;
+&lt;p&gt;Anaconda incluye más de 190 paquetes pero puede pasar que el que desees no esté incluido en Anaconda. Entonces puedes hacer uso de PIP.&lt;/p&gt;
+&lt;p&gt;Primero instala el paquete PIP (probablemente ya esté instalado), activa el entorno y luego usa los comandos de PIP.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;conda install -n nombredelentorno pip
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source &lt;/span&gt;activate nombredelentorno
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install nombredelpaquete
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Con PIP puedes instalar librerías, crear un archivo de requerimientos, etc. &lt;/p&gt;
+&lt;h2&gt;Más información&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pip.pypa.io/en/latest/reference/pip.html"&gt;Reference Guide PIP (2015)&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://soulchainer.github.io/posts/2013/12/30/python-paquetes-entornos-virtuales/"&gt;Entornos virtuales con PIP (2013)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://conda.pydata.org/docs/faq.html"&gt;Conda FAQ(2015)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://davebehnke.com/using-python-anaconda-distribution.html"&gt;Using the Anaconda Python Distribution(2014)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtual-environments"&gt;Virtualenv Python Guide(2014)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Italo Farfán Vera</dc:creator><pubDate>Mon, 06 Apr 2015 21:07:00 +0200</pubDate><guid>tag:,2015-04-06:posts/2015/04/06/paquetes-python-con-anaconda.html</guid><category>herramientas</category></item><item><title>Inteligencia Artificial y Big Data</title><link>/posts/2015/03/03/inteligencia-artificial-y-big-data.html</link><description>&lt;p&gt;&lt;strong&gt;La Inteligencia Artificial&lt;/strong&gt; es un campo perteneciente a las Ciencias de la Computación cuyo objetivo es la creación de  software y/o hardware inteligente. Entendamos que cualquier sistema basado en hardware y software que pueda realizar exitosamente una tarea no trivial se dice que posee un grado de inteligencia artificial &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;. Una actividad no trivial podría ser: la toma de decisiones financieras, pilotar un helicóptero, desarrollar nuevos productos, realizar un plan de mantenimiento predictivo de máquinas, etc.&lt;/p&gt;
 &lt;p&gt;Algunas áreas de la Inteligencia Artificial son: teoría de juegos, procesamiento de lenguaje natural, visión por computador, sistemas expertos, búsqueda, reconocimiento de patrones y más.&lt;/p&gt;
 &lt;p&gt;Cuando en Inteligencia Artificial hablamos de algoritmos genéticos, hablamos de algoritmos de búsqueda inspirados en la teoría de evolución. Un algoritmo es un proceso o conjunto de reglas que permite resolver de manera eficaz un problema. Mejores algoritmos serán eficientes, peores algoritmos sólo serán eficaces.&lt;/p&gt;
 &lt;p&gt;La Inteligencia Artificial va de la mano del desarrollo tecnológico. Si bien es cierto, la Inteligencia Artificial emergió con fuerza en los 40s con la aparición de las  primeras computadoras electrónicas. A medida que la tecnología nos ha ido proporcionando mayor capacidad de procesamiento y almacenamiento, la Inteligencia Artificial ha ido cobrando mayor protagonismo en la solución de problemas complejos. En la actualidad hablamos de sistemas inteligentes capaces de realizar transacciones de compra y venta de acciones en tiempo real, asistentes virtuales de atención al consumidor, aplicaciones orientadas a la fidelización de clientes, etc.&lt;/p&gt;
