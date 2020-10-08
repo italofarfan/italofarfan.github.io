@@ -1,6 +1,6 @@
-www dot italofarfan dot com
+www dot italofarve dot com
 ============================
-Este repositorio mantiene mi blog que puedes visitar en www.italofarfa.com.
+Este repositorio mantiene mi blog que puedes visitar en www.italofarve.com
 
 Esta compilado con `Pelican <http://docs.getpelican.com/>`_ y como hosting uso `GitHub Pages <http://pages.github.com/>`_.
 
